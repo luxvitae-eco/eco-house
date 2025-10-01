@@ -1,0 +1,132 @@
+@import 'tailwindcss';
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: hsl(127 78% 18%);
+  --foreground: hsl(127 5% 96%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(127 84% 5%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(127 84% 4.9%);
+  --primary: hsl(127 15% 15%);
+  --primary-foreground: hsl(127 79% 19%);
+  --secondary: hsl(127 40% 96.1%);
+  --secondary-foreground: hsl(221 47% 11%);
+  --muted: hsl(127 40% 96.1%);
+  --muted-foreground: hsl(127 16% 47%);
+  --accent: hsl(127 40% 96%);
+  --accent-foreground: hsl(127 47% 11%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(127 40% 98%);
+  --border: hsl(127 9% 28%);
+  --input: hsl(127 32% 91%);
+  --ring: hsl(127 84% 5%);
+  --radius: 16px;
+  --color-red: hsl(12 76% 61%);
+  --color-blue: hsl(173 58% 39%);
+  --color-green: hsl(197 37% 24%);
+  --color-amber: hsl(43 74% 66%);
+  --color-orange: hsl(27 87% 67%);
+  --color-lime: hsl(58 60% 50%);
+}
+
+.dark {
+  --background: hsl(127 15% 7%);
+  --foreground: hsl(127 15% 94%);
+  --card: hsl(127 15% 7%);
+  --card-foreground: hsl(127 40% 98%);
+  --popover: hsl(127 10% 15%);
+  --popover-foreground: hsl(127 40% 98%);
+  --primary: hsl(80, 25%, 35%);
+  --primary-foreground: hsl(80, 25%, 70%);
+  --secondary: hsl(80, 42%, 30%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(127, 15%, 28%);
+  --muted-foreground: hsl(127, 15%, 84%);
+  --accent: hsl(80, 27%, 28%);
+  --accent-foreground: hsl(127 27% 80%);
+  --destructive: hsl(0 62% 30%);
+  --destructive-foreground: hsl(127 40% 90%);
+  --border: hsl(127 10% 17%);
+  --input: hsl(80, 25%, 20%);
+  --ring: hsl(80, 27%, 30%);
+  --color-red: hsl(220 70% 50%);
+  --color-blue: hsl(160, 65%, 40%);
+  --color-green: hsl(30 80% 55%);
+  --color-amber: hsl(255, 65%, 60%);
+  --color-orange: hsl(0, 75%, 55%);
+  --color-lime: hsl(58 60% 50%);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+/* this creates a custom class */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-xs: calc(var(--radius) - 12px);
+  --radius-sm: calc(var(--radius) - 10px);
+  --radius-md: calc(var(--radius) - 8px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  --container-2xs: 16rem;
+  --container-4xs: 8rem;
+  --container-16xs: 4rem;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    scrollbar-color: hsl(80, 27%, 28%) hsl(127 18% 7%);
+    scrollbar-width: thin;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+}

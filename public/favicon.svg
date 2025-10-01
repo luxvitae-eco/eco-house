@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="25.5" height="25.5" viewBox="0 0 25.5 25.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(0.25 0.25)">
+    <path id="Rectangle" d="M23 0C24.1047 0 25 0.89528 25 2L25 23C25 24.1047 24.1047 25 23 25L2 25C0.89528 25 0 24.1047 0 23L0 2C0 0.89528 0.89528 0 2 0L23 0Z" fill="#202120" />
+    <g transform="translate(2 2)">
+      <path id="Vector" d="M10.6015 0L21 8.97708L18.2609 8.97708L18.2609 21L2.78986 21L2.78986 8.97708L0 8.97708L10.6015 0Z" />
+      <path d="M19.2609 8.97708L19.4697 8.97708L21 8.97708L19.8417 7.97708L10.6015 0L1.18095 7.97708L0 8.97708L2.78986 8.97708L2.78986 21L18.2609 21L18.2609 8.97708L19.2609 8.97708ZM17.2609 20L17.2609 7.97708L18.3114 7.97708L10.5952 1.31567L2.72841 7.97708L3.78986 7.97708L3.78986 20L17.2609 20Z" fill="#90C418" fill-rule="evenodd" />
+    </g>
+    <path id="Vector" d="M0 0L6.93038 5.46455" fill="none" stroke-width="1.5" stroke="#95D111" transform="translate(16.57 2.535)" />
+    <path id="Path" d="M5.91787 0L11.8357 7.00001L9.11448 6.92812L11.8357 11L0 11L2.69958 7.00001L0 7.00001L5.91787 0Z" fill="#91C224" fill-rule="evenodd" transform="translate(1 4)" />
+  </g>
+</svg>
