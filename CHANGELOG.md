@@ -18,7 +18,7 @@ All notable changes to this project will be documented in this file.
 - Custom Image Gallery
 - Single Page
 - Custom 404
-- Custom Error
+- Error Handling Setup
 - UI components
 - Test UI components
 
@@ -29,7 +29,7 @@ All notable changes to this project will be documented in this file.
 
 ### Removed
 
-- Cloud DB
+- Cloud DB Supabase
 - Maps API
 - Unused images and styles
 
