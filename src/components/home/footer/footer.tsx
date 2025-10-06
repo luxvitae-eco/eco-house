@@ -33,7 +33,7 @@ export function Footer() {
             <address className="not-italic space-y-2 mt- pl-5">
               <div className="flex items-center text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>Offices and ​Service Areas Faro, Marbella, Tivat</span>
+                <span>Offices &amp; ​Service Areas: Faro, Marbella, Tivat</span>
               </div>
               <div className="flex items-center text-sm text-muted-foreground">
                 <Map className="h-4 w-4 mr-2" />

@@ -1,15 +1,19 @@
-# Lux Vitae - Eco House
+# Lux Vitae - Eco House Network
 
 ## The Foundation of Sustainable Architecture
 
-An ecological home is more than a structure — it’s an integrated system designed to perform in harmony with its environment. Lux Vitae eco-homes fuse innovative technology with timeless design to dramatically reduce energy use, eliminate waste, and nurture healthier, more resilient living spaces. This is more than architecture — it’s a necessary evolution in how we build, live, and belong to nature.
+An ecological home is more than a structure — it's an integrated system designed to perform in harmony with its environment. Lux Vitae eco-homes fuse innovative technology with timeless design to dramatically reduce energy use, eliminate waste, and nurture healthier, more resilient living spaces. This is more than architecture — it's a necessary evolution in how we build, live, and belong to nature.
 
 ## Development
 
 LVE custom Next.js with minimal UI components, built with shadcn/ui and Tailwind CSS,  
 designed to a responsive, and user-friendly web site.
 
-![Lux Vitae Eco - screenshot design](lux-vitae-eco-screenshot.jpg)
+[![Lux Vitae Eco - screenshot design](lux-vitae-eco-screenshot.jpg)](https://live-ecohouse.vercel.app/)
+
+## URL
+
+Visit: [live-ecohouse.vercel.app](https://live-ecohouse.vercel.app/)
 
 ## Features
 

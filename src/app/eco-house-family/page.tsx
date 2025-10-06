@@ -25,18 +25,30 @@ export const metadata: Metadata = {
 
 export default function EcoHouseFamilyPage() {
   const galleryImages = [
-    { src: '/assets/eco-house-2/living-dinning.jpg', alt: 'Eco House Family - Kitchen open' },
-    { src: '/assets/eco-house-2/kitchen-open.jpg', alt: 'Eco House Family - Kitchen open' },
+    {
+      src: '/assets/eco-house-2/lux-vitae-eco-house-family-living-dinning.jpg',
+      alt: 'Eco House Family - Kitchen open',
+    },
+    { src: '/assets/eco-house-2/lux-vitae-eco-house-family-kitchen-open.jpg', alt: 'Eco House Family - Kitchen open' },
     // { src: '/assets/eco-house-2/living-room-sheer.png', alt: 'Eco House Family - Living Room' },
-    { src: '/assets/eco-house-2/bedroom-parent-suite.jpg', alt: 'Eco House Family - Bedroom Suite' },
+    {
+      src: '/assets/eco-house-2/lux-vitae-eco-house-family-bedroom-suite.jpg',
+      alt: 'Eco House Family - Bedroom Suite',
+    },
     {
       src: '/assets/eco-house-2/lux-vitae-eco-house-family-bedroom-child.jpg',
       alt: 'Eco House Family - Bedroom Child',
     },
     // { src: '/assets/eco-house-2/bedroom-couple-sheer-white.jpg', alt: 'Eco House Family - Bedroom' },
-    { src: '/assets/eco-house-2/bathroom-full.jpg', alt: 'Eco House Family - Bathroom full' },
+    {
+      src: '/assets/eco-house-2/lux-vitae-eco-house-family-bathroom-full.jpg',
+      alt: 'Eco House Family - Bathroom full',
+    },
     // { src: '/assets/eco-house-2/bathroom-shower.jpg', alt: 'Eco House Family - Bathroom shower' },
-    { src: '/assets/eco-house-2/lux-vitae-garage-1-day.jpg', alt: 'Eco House Family Side-Load Garage' },
+    {
+      src: '/assets/eco-house-2/lux-vitae-eco-house-family-garage-side.jpg',
+      alt: 'Eco House Family - Side-Load Garage',
+    },
     // { src: '/assets/eco-house-2/lux-vitae-garage-2.jpg', alt: 'Eco House Family - Front-Load or Street-Facing Garage' },
     // { src: '/assets/eco-house-2/lux-vitae-garage-2-nite.jpg', alt: 'Eco House Family - Basement-level Garage' },
   ];
@@ -62,8 +74,8 @@ export default function EcoHouseFamilyPage() {
               <div className="mt-16 mx-auto max-w-4xl">
                 <div className="relative aspect-video rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-2/lux-vitae-eco-house-family-2-1024.jpg"
-                    alt="Eco House Family - Main View"
+                    src="/assets/eco-house-2/lux-vitae-eco-house-family.jpg"
+                    alt="Lux Vitae Eco House Family Courtyard"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
@@ -118,7 +130,7 @@ export default function EcoHouseFamilyPage() {
           </section>
 
           {/* Two Column Section */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left Column - Image */}
@@ -177,7 +189,7 @@ export default function EcoHouseFamilyPage() {
           <ImageGallery galleryImages={galleryImages} />
 
           {/* Customize Your Family Courtyard - Optional Upgrade */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-4">
                 Customize Your Family Courtyard
@@ -190,7 +202,7 @@ export default function EcoHouseFamilyPage() {
               </p>
               <div className="h-full w-full flex items-center justify-center mt-8">
                 <Image
-                  src="/assets/eco-house-2/lux-vitae-annex-studio-custom-1280.jpg"
+                  src="/assets/eco-house-2/lux-vitae-eco-house-family-annex-studio-custom.jpg"
                   alt="Annex Studio Option"
                   width={1280}
                   height={480}
@@ -210,28 +222,6 @@ export default function EcoHouseFamilyPage() {
                       <CarouselItem className="h-full p-0">
                         <div className="h-full w-full flex items-center justify-center">
                           <Image
-                            src="/assets/eco-house-2/eco-house-annex-1.jpg"
-                            alt="Annex/Studio Option - View 1"
-                            width={800}
-                            height={800}
-                            className="object-cover w-full h-full"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="h-full p-0">
-                        <div className="h-full w-full flex items-center justify-center">
-                          <Image
-                            src="/assets/eco-house-2/eco-house-annex-2.jpg"
-                            alt="Annex/Studio Option - View 2"
-                            width={800}
-                            height={800}
-                            className="object-cover w-full h-full"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="h-full p-0">
-                        <div className="h-full w-full flex items-center justify-center">
-                          <Image
                             src="/assets/eco-house-2/eco-house-annex-3.jpg"
                             alt="Annex/Studio Option - View 3"
                             width={800}
@@ -243,10 +233,43 @@ export default function EcoHouseFamilyPage() {
                       <CarouselItem className="h-full p-0">
                         <div className="h-full w-full flex items-center justify-center">
                           <Image
-                            src="/assets/eco-house-2/eco-house-annex-4.jpg"
-                            alt="Annex/Studio Option - View 4"
+                            src="/assets/eco-house-2/lux-vitae-eco-house-office.jpg"
+                            alt="Annex Studio Option - House Office"
                             width={800}
-                            height={450}
+                            height={800}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="h-full p-0">
+                        <div className="h-full w-full flex items-center justify-center">
+                          <Image
+                            src="/assets/eco-house-2/lux-vitae-custom-kitchen.jpg"
+                            alt="Annex Studio Option - Custom Kitchen"
+                            width={800}
+                            height={800}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="h-full p-0">
+                        <div className="h-full w-full flex items-center justify-center">
+                          <Image
+                            src="/assets/eco-house-2/lux-vitae-living-playroom.jpg"
+                            alt="Annex Studio Option - Living Playroom"
+                            width={800}
+                            height={800}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="h-full p-0">
+                        <div className="h-full w-full flex items-center justify-center">
+                          <Image
+                            src="/assets/eco-house-2/kitchen-smart-home.jpg"
+                            alt="Annex Studio Option - Kitchen Smart Home"
+                            width={800}
+                            height={800}
                             className="object-cover w-full h-full"
                           />
                         </div>

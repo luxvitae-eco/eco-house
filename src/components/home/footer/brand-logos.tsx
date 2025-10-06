@@ -39,11 +39,11 @@ const logos: LogoItem[] = [
     url: 'https://en.wikipedia.org/wiki/Evaporative_cooler',
   },
   {
-    src: '/assets/logo/Delivering-BREEAM-05.svg',
-    alt: 'Delivering-BREEAM-01',
+    src: '/assets/logo/energy-star.svg',
+    alt: 'Energy Star Label',
     width: 64,
     height: 64,
-    url: 'https://www.breeam.com/',
+    url: 'https://energy-efficient-products.ec.europa.eu/ecodesign-and-energy-label_en',
   },
 ];
 
