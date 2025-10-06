@@ -50,7 +50,7 @@ export function HomeEco() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* Section 1: Features Section */}
         <section className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">
@@ -200,7 +200,7 @@ export function HomeEco() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* Section 3: Security Solutions - Image Left, Content Right */}
         <section className="mx-auto max-w-7xl  px-6 lg:px-8 mb-16">
@@ -208,7 +208,7 @@ export function HomeEco() {
             <div className="relative">
               <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                 <Image
-                  src="/assets/eco-house-3/lux-vitae-eco-home-door.jpg"
+                  src="/assets/lux-vitae-smart-home.jpg"
                   alt="Solar orientation and passive design principles"
                   fill
                   className="object-cover rounded-lg"
@@ -253,10 +253,10 @@ export function HomeEco() {
               </p>
             </div>
             <div className="order-1 lg:order-2 relative">
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+              <div className="aspect-[4/3] bg-muted rounded-lg flex items-center justify-center">
                 <Image
-                  src="/assets/eco-house-air.jpg"
-                  alt="Solar orientation and passive design principles"
+                  src="/assets/eco-house-label.jpg"
+                  alt="Europe ecolabel design principles"
                   fill
                   className="object-cover rounded-lg"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -266,7 +266,7 @@ export function HomeEco() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* Section 5: CLASSIFICATION */}
         <section className="px-6 lg:px-8">
@@ -466,7 +466,7 @@ export function HomeEco() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* CTA Eco Plan */}
         <section className="max-w-5xl mx-auto mb-16 lg:mb-24 px-8">
@@ -501,7 +501,7 @@ export function HomeEco() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-24" />
+        {/* <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-24" /> */}
       </div>
     </>
   );

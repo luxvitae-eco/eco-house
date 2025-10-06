@@ -1,32 +1,23 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 import { NavigationBar } from '@/components/home/header/navigation-bar';
 import { SinglePageGradient } from '@/components/gradients/single-page-gradient';
 import { Separator } from '@/components/ui/separator';
 import { Bed, Bath, Ruler, Car, House, HousePlus, Trees } from 'lucide-react';
-import type { Metadata } from 'next';
-import { ImageGallery } from '@/components/eco-house-couple/image-gallery';
 import '@/styles/single-page.css';
 
-export const metadata: Metadata = {
-  title: 'Eco House Couple - Sustainable Construction & Building | Lux Vitae',
-  description:
-    'Core principles of eco-design and sustainable construction. Professional development services for eco-friendly building projects.',
-  keywords: 'sustainable construction, eco development, green building, sustainable development, eco construction',
-  openGraph: {
-    title: 'Eco House Couple - Sustainable Construction & Building | Lux Vitae',
-    description: 'Core principles of eco-design and sustainable construction for building projects.',
-    type: 'website',
-  },
-};
-
 export default function EcoHouseCouplePage() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const galleryImages = [
-    { src: '/assets/eco-house-1/1024x900.jpg', alt: 'Eco House Couple - Exterior View 900' },
-    { src: '/assets/eco-house-1/1080x1080.jpg', alt: 'Eco House Couple - Living Room 1080' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-kitchen-open-1024x768.jpg', alt: 'Eco House Couple - Kitchen 768' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-bedroom-2-1024x768.jpg', alt: 'Eco House Couple - Bedroom' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-front-1024-768.jpg', alt: 'Eco House Couple - Exterior View' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-living-room-1024x768.jpg', alt: 'Eco House Couple - Living Room' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-kitchen-open-1024x768.jpg', alt: 'Eco House Couple - Kitchen' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-bedroom-1024x768.jpg', alt: 'Eco House Couple - Bedroom' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-bathroom-1024x768.jpg', alt: 'Eco House Couple - Bathroom' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-office-1024x768.jpg', alt: 'Eco House Couple - Home office' },
   ];
@@ -41,7 +32,7 @@ export default function EcoHouseCouplePage() {
           <section className="pt-32 pb-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-4xl text-center">
-                <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">The Sanctuary for Two</h1>
+                <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">Sanctuary for Two</h1>
                 <p className="mt-6 text-lg leading-8 text-muted-foreground">
                   Low-maintenance luxury for couples and small households, where every square meter supports calm,
                   connection, and sustainable living.
@@ -52,11 +43,11 @@ export default function EcoHouseCouplePage() {
               <div className="mt-16 mx-auto max-w-4xl">
                 <div className="relative aspect-video rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-1/lux-vitae-eco-house-1024x768.jpg"
+                    src="/assets/lux-vitae-eco-home-1.jpg"
                     alt="Eco House Couple - Main View"
                     fill
                     className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1024px"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                     priority
                   />
                 </div>
@@ -76,6 +67,7 @@ export default function EcoHouseCouplePage() {
                   <h3 className="text-2xl font-bold text-foreground mb-2">2</h3>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide">Bedrooms</p>
                 </div>
+
                 {/* Bathrooms Column */}
                 <div className="text-center md:border-r">
                   <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
@@ -84,6 +76,7 @@ export default function EcoHouseCouplePage() {
                   <h3 className="text-2xl font-bold text-foreground mb-2">2</h3>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide">Bathrooms</p>
                 </div>
+
                 {/* Size Column */}
                 <div className="text-center md:border-r">
                   <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
@@ -92,6 +85,7 @@ export default function EcoHouseCouplePage() {
                   <h3 className="text-2xl font-bold text-foreground mb-2">80-120</h3>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide">m²</p>
                 </div>
+
                 {/* Parking Column */}
                 <div className="text-center">
                   <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
@@ -104,65 +98,32 @@ export default function EcoHouseCouplePage() {
             </div>
           </section>
 
-          {/* Image Gallery Component (Client Component) */}
-          <ImageGallery galleryImages={galleryImages} />
-
-          {/* Customize Your Family Courtyard - Optional Upgrade */}
-          <section className="py-16 bg-muted/50">
+          {/* Gallery Section - 3x2 Grid */}
+          <section className="py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold tracking-tight text-foreground mb-4">
-                  Customize Your Family Courtyard
-                </h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Enhance your eco-home with our optional annex/studio space - a versatile addition perfect for home
-                  offices, creative studios, or guest accommodations.
+              <div className="mx-auto max-w-4xl text-center mb-12">
+                <h2 className="text-3xl font-bold tracking-tight text-foreground">A Home of Quiet Luxury</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Step inside your serene retreat — where every detail supports ease, connection, and light.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Left Column - Image */}
-                <div className="relative aspect-video rounded-xl overflow-hidden">
-                  <Image
-                    src="/assets/eco-house-2/studio-living-room-extension-eco.png"
-                    alt="Family Courtyard with Optional Annex/Studio"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-
-                {/* Right Column - Content */}
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold tracking-tight text-foreground">Annex/Studio Option</h3>
-                  <div className="space-y-4 text-md font-light text-muted-foreground">
-                    <p>
-                      Our optional annex/studio adds approximately 30-40 square meters of premium space to your Family
-                      Courtyard design. This versatile addition can be customized to serve as:
-                    </p>
-                    <ul className="space-y-2 ml-4">
-                      <li>• Home office or remote workspace</li>
-                      <li>• Artistic or creative studio</li>
-                      <li>• Guest accommodation with private entrance</li>
-                      <li>• Teen retreat or private study</li>
-                      <li>• Wellness or meditation space</li>
-                    </ul>
-                    <p>
-                      The annex features the same high-performance eco-standards as the main home, including
-                      energy-efficient glazing, sustainable materials, and seamless integration with your home's smart
-                      systems.
-                    </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {galleryImages.map((image, index) => (
+                  <div
+                    key={index}
+                    className="relative aspect-video rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
+                    onClick={() => setSelectedImage(image.src)}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                   </div>
-
-                  <div className="pt-4">
-                    <Button variant="eco" size="lg" asChild>
-                      <Link href="/contact">Inquire About Pricing</Link>
-                    </Button>
-                    <p className="mt-3 text-sm text-muted-foreground">
-                      * Available as an upgrade option. Pricing varies based on specifications.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </section>
@@ -174,7 +135,7 @@ export default function EcoHouseCouplePage() {
                 {/* Left Column - Image */}
                 <div className="relative aspect-square rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-1/eco-house-luxvitae-1-1.jpg"
+                    src="/assets/lux-vitae-eco-home-1.jpg"
                     alt="Eco House Sanctuary for Two - Detailed View"
                     fill
                     className="object-cover"
@@ -220,11 +181,11 @@ export default function EcoHouseCouplePage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* CTA Eco Plan */}
-          <section className="max-w-5xl mx-auto mb-16 lg:mb-24 px-8">
-            <h3 className="mt-2 text-4xl font-bold text-center tracking-tight text-foreground sm:text-5xl mb-16">
+          <section className="max-w-5xl mx-auto mb-16 lg:mb-24 p-8">
+            <h3 className="mt-2 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
               Explore our sustainable home models
             </h3>
             {/* CTA Link-Buttons */}
@@ -241,21 +202,45 @@ export default function EcoHouseCouplePage() {
               <Button variant="default" size="default" asChild className="h-auto p-4 flex-col gap-3">
                 <Link href="/eco-house-family" className="text-center">
                   <House className="h-8 w-8 mx-auto" />
-                  <span className="text-md font-light">See the Family Courtyard</span>
+                  <span className="text-md font-light">See Family Courtyard</span>
                 </Link>
               </Button>
 
               {/* Curious CTA */}
-              <Button variant="default" size="default" asChild className="h-auto p-4 flex-col gap-3">
+              <Button variant="eco" size="default" asChild className="h-auto p-4 flex-col gap-3">
                 <Link href="/eco-house-villa" className="text-center">
                   <HousePlus className="h-8 w-8 mx-auto" />
-                  <span className="text-md font-light">Unveil the Grand Villa</span>
+                  <span className="text-md font-light">Unveil Grand Villa</span>
                 </Link>
               </Button>
             </div>
           </section>
         </div>
       </div>
+
+      {/* Full Screen Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-4xl max-h-full">
+            <Image
+              src={selectedImage}
+              alt="Gallery Image"
+              width={1200}
+              height={800}
+              className="object-contain max-w-full max-h-full"
+            />
+            <button
+              className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300"
+              onClick={() => setSelectedImage(null)}
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 }

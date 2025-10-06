@@ -1,3 +1,10 @@
+body {
+  background-image:
+    linear-gradient(to right, hsl(127, 15%, 10%) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(127, 15%, 10%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
 .luxvitae-background-base {
   width: 100%;
   position: absolute;
@@ -6,10 +13,6 @@
 
 .grain-background {
   background: url('/assets/background/grain-bg.svg') repeat;
-}
-
-.grid-bg {
-  background: url('/assets/background/grid-bg.svg') no-repeat;
 }
 
 .top-left-gradient-background {
@@ -140,27 +143,33 @@
   height: 559px;
   left: 50%;
   margin-left: -197px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(168, 240, 248, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(174, 242, 247, 0.6) 100%);
   filter: blur(100px);
 }
 
-.footer-border {
-  position: relative;
-  background: linear-gradient(90deg, rgba(65, 75, 78, 0) 0%, #414b4e 49.5%, rgba(65, 75, 78, 0) 100%);
+.bg-border.border-light {
+  background-color: hsl(132, 10%, 10%);
 }
-.footer-border::after {
+
+.border-light {
+  position: relative;
+  /* background: linear-gradient(90deg, rgba(65, 75, 78, 0) 0%, #414b4e 49.5%, rgba(65, 75, 78, 0) 100%); */
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 20%, rgba(255, 248, 0, 0.3) 50%, rgba(0, 0, 0, 0) 80%);
+}
+.border-light::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: calc(50% - 124px);
   width: 248px;
   height: 1px;
-  background: linear-gradient(
+  /*   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 15%,
     rgba(255, 248, 0, 0.6) 50%,
     rgba(255, 255, 255, 0) 85%
-  );
+  ); */
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 20%, rgba(255, 248, 0, 0.5) 50%, rgba(0, 0, 0, 0) 80%);
 }
 
 .btn-anim-lr {

@@ -187,7 +187,7 @@ export default function ContactPage() {
               </Card>
             </section>
 
-            <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+            <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
             {/* contect privacy */}
             <section className="mx-auto max-w-xl text-center">
@@ -212,7 +212,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-24" /> */}
+        {/* <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-24" /> */}
       </div>
       <Toaster />
     </>

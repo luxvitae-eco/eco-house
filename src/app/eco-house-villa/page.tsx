@@ -24,12 +24,17 @@ export const metadata: Metadata = {
 
 export default function EcoHouseVillaPage() {
   const galleryImages = [
-    { src: '/assets/eco-house-3/eco-house-2.jpg', alt: 'Eco House Villa - Home Office' },
-    { src: '/assets/eco-house-3/eco-house-3.jpg', alt: 'Eco House Villa - Luxury Pool & Garden' },
-    { src: '/assets/eco-house-3/eco-house-4.jpg', alt: 'Eco House Villa - Gourmet Kitchen' },
-    { src: '/assets/eco-house-3/eco-house-5.jpg', alt: 'Eco House Villa - Bathroom' },
-    { src: '/assets/eco-house-3/eco-house-6.jpg', alt: 'Eco House Villa - Shower' },
-    { src: '/assets/eco-house-3/eco-house-7.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/eco-villa-open.jpg', alt: 'Eco House Villa - Home Office' },
+    { src: '/assets/eco-house-3/eco-villa-luxury-pool.jpg', alt: 'Eco House Villa - Luxury Pool & Garden' },
+    { src: '/assets/eco-house-3/eco-villa-bedroom.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/eco-villa-gourmet-kitchen.jpg', alt: 'Eco House Villa - Gourmet Kitchen' },
+    { src: '/assets/eco-house-3/eco-villa-bathroom.jpg', alt: 'Eco House Villa - Bathroom' },
+    { src: '/assets/eco-house-3/eco-villa-shower.jpg', alt: 'Eco House Villa - Shower' },
+    { src: '/assets/eco-house-3/eco-villa-bedroom.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/eco-villa-bedroom-1.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/eco-villa-bedroom-2.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/eco-villa-bedroom-3.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/eco-villa-bedroom-4.jpg', alt: 'Eco House Villa - Bedroom' },
   ];
 
   return (
@@ -91,7 +96,7 @@ export default function EcoHouseVillaPage() {
                   <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <Ruler className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">140-180</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">180-240</h3>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide">m²</p>
                 </div>
 
@@ -133,7 +138,7 @@ export default function EcoHouseVillaPage() {
                   <div className="space-y-4 text-md font-light text-muted-foreground">
                     <p>
                       The Grand Villa is designed for larger families or those who need extra room for hobbies, guests,
-                      or a dedicated workspace. With 140 to 180 square meters of premium sustainable living space, it
+                      or a dedicated workspace. With 180 to 240 square meters of premium sustainable living space, it
                       offers uncompromising luxury and environmental responsibility.
                     </p>
                     <p>
@@ -164,7 +169,7 @@ export default function EcoHouseVillaPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           {/* CTA Eco Plan */}
           <section className="max-w-5xl mx-auto mb-16 lg:mb-24 px-8">

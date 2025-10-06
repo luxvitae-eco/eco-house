@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
               </Card>
             </div>
 
-            <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+            <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
             <div className="mx-auto max-w-4xl">
               <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-8">

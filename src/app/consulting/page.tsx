@@ -94,10 +94,10 @@ export default function ConsultingPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* Consulting Philosophy */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Our Consulting Approach</h2>
@@ -149,7 +149,7 @@ export default function ConsultingPage() {
           </section>
 
           {/* Technical Consulting */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Technical Consulting</h2>
@@ -237,7 +237,7 @@ export default function ConsultingPage() {
           </section>
 
           {/* Architectural Advice */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Architectural Advice</h2>
@@ -312,7 +312,7 @@ export default function ConsultingPage() {
           </section>
 
           {/* Call to Action */}
-          <section className="py-16">
+          <section className="mb-20">
             <div className="mx-auto max-w-2xl px-6 lg:px-8">
               <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
                 <SinglePageCardGradient />

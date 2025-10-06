@@ -43,7 +43,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           <section className="max-w-4xl mx-auto my-16">
             {/* <div className="grid grid-cols-1 gap-8 lg:grid-cols-2"> */}
@@ -61,7 +61,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           <section className="max-w-7xl px-6 lg:px-8 mx-auto my-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-16">
@@ -106,7 +106,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           <section className="max-w-4xl mx-auto my-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-8">
@@ -155,7 +155,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           <section className="max-w-4xl mx-auto my-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-8">
@@ -204,10 +204,10 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           {/* Call to Action */}
-          <section className="my-16">
+          <section className="mb-20">
             <div className="mx-auto max-w-2xl">
               <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
                 <SinglePageCardGradient />

@@ -105,10 +105,10 @@ export default function DesignPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* Design Philosophy */}
-          <section className="py-16">
+          {/*           <section className="py-16">
             <div className="mx-auto max-w-2xl px-6 lg:px-8">
               <h2 className="text-3xl font-bold text-center tracking-tight text-foreground">Our Design Philosophy</h2>
               <p className="mt-4 text-lg text-justify text-muted-foreground">
@@ -118,9 +118,43 @@ export default function DesignPage() {
                 that endure, adapt, and heal.
               </p>
             </div>
+          </section> */}
+
+          {/* Two Column Section */}
+          <section className="py-16">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Left Column - Image */}
+                <div className="relative aspect-video rounded-xl overflow-hidden">
+                  <Image
+                    src="/assets/lux-vitae-eco-house-family.jpg"
+                    alt="Eco House Sanctuary for Two - Detailed View"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+
+                {/* Right Column - Content */}
+                <div className="space-y-6">
+                  <h2 className="text-3xl font-bold text-center tracking-tight text-foreground">
+                    Our Design Philosophy
+                  </h2>
+                  <p className="mt-4 text-lg text-justify text-muted-foreground">
+                    We design homes that belong, to their land, their climate, and their time. Every project begins with
+                    passive principles: orientation for sun and breeze, thermal mass for stability, and natural
+                    materials for health.
+                  </p>
+                  <p className="mt-4 text-lg text-justify text-muted-foreground">
+                    We prioritize local identity using regional materials and design for legacy, creating spaces that
+                    endure, adapt, and heal.
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* Design segment */}
           <section className="my-16">
@@ -217,7 +251,7 @@ export default function DesignPage() {
                         alt="Eco-home design"
                         width={480}
                         height={480}
-                        src="/assets/lux-vitae-eco-design-520.jpg"
+                        src="/assets/lux-vitae-eco-design-520x520.jpg"
                         className="object-cover rounded-lg w-full h-auto"
                         sizes="(max-width: 767px) 100vw, (max-width: 1023px) 33vw, 480px"
                       />
@@ -252,7 +286,7 @@ export default function DesignPage() {
                         alt="Eco-Home Solar Energy"
                         width={480}
                         height={480}
-                        src="/assets/lux-vitae-solar-520.jpg"
+                        src="/assets/lux-vitae-solar-520x520.jpg"
                         className="object-cover rounded-lg w-full h-auto"
                         sizes="(max-width: 767px) 100vw, (max-width: 1023px) 33vw, 480px"
                       />
@@ -287,7 +321,7 @@ export default function DesignPage() {
                         alt="Eco-Home Water Conservation"
                         width={480}
                         height={480}
-                        src="/assets/lux-vitae-water-520.jpg"
+                        src="/assets/lux-vitae-water-520x520.jpg"
                         className="object-cover rounded-lg w-full h-auto"
                         sizes="(max-width: 767px) 100vw, (max-width: 1023px) 33vw, 480px"
                       />
@@ -315,10 +349,10 @@ export default function DesignPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-20" />
 
           {/* Call to Action */}
-          <section className="my-16">
+          <section className="mb-20">
             <div className="mx-auto max-w-2xl px-6 lg:px-8">
               <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
                 <SinglePageCardGradient />

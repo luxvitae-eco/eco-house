@@ -33,7 +33,7 @@ interface PlanTier {
 const planTiers: PlanTier[] = [
   {
     name: 'Design',
-    thumb: '/assets/lux-vitae-eco-home-design-1.jpg',
+    thumb: '/assets/lux-vitae-eco-home-design.jpg',
     period: 'Inspired Spaces, Rooted in Place',
     description:
       'We create innovative design solutions that harmonize aesthetics and functionality within sustainable architecture.',

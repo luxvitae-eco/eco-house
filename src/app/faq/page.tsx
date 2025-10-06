@@ -44,7 +44,7 @@ export default function FAQ() {
       id: 'item-4',
       question: 'What certifications do your homes meet?',
       answer:
-        "All homes meet or exceed Passive House principles for energy efficiency. Many are LEED Gold or Net-Zero Ready. We tailor certifications to your goals, whether it's energy, materials, water, or wellness, living building challenge.",
+        'All homes meet or exceed Passive House principles for energy efficiency and are designed with the EU Ecolabel criteria in mind—prioritizing low environmental impact, healthy indoor air quality, and resource-conscious construction. Rooted in the Mediterranean region, our designs respond to local climate, materials, and traditions, while supporting certifications aligned with your values: energy performance, sustainable sourcing, water stewardship, and wellness. Whether you seek compliance with EU green building standards or aspire to Living Building Challenge principles, we tailor each home to your vision.',
       cta: 'Download our',
       link: '/contact',
       linkText: 'Certification Guide PDF',
@@ -53,7 +53,7 @@ export default function FAQ() {
       id: 'item-5',
       question: 'Can I customize the floor plan or materials?',
       answer:
-        "Absolutely. Our models are starting points, not templates. We'll adapt layouts, finishes, and systems to your lifestyle, site, and budget. Love reclaimed wood? Want a pottery studio? We'll make it happen, sustainably.",
+        "Absolutely. Our models are starting points, not templates. We'll adapt layouts, finishes, and systems to your lifestyle, site, and budget. Love reclaimed wood? Want a home office or creative studio? We'll make it happen, sustainably.",
       cta: 'Start with our',
       link: '/contact',
       linkText: 'Customization Worksheet',
@@ -102,7 +102,7 @@ export default function FAQ() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* Section 2: Accordion Component */}
           <section className="my-16">
@@ -119,7 +119,7 @@ export default function FAQ() {
                         <span className="text-sm text-foreground">→ {faq.cta}</span>
                         <Button variant="outline" size="sm" asChild>
                           <Link href={faq.link}>
-                            <Lock className="mr-2" size={16} />
+                            {/* <Lock className="mr-2" size={16} /> */}
                             {faq.linkText}
                           </Link>
                         </Button>
@@ -139,10 +139,10 @@ export default function FAQ() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           {/* Call to Action */}
-          <section className="py-16">
+          <section className="mb-20">
             <div className="mx-auto max-w-2xl">
               <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
                 <SinglePageCardGradient />

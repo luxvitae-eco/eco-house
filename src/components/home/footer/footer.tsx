@@ -1,12 +1,10 @@
 import Link from 'next/link';
 import { Mail, Phone, MapPin, Map, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import { SinglePageCardGradient } from '@/components/gradients/single-page-card-gradient';
 import { BrandLogos } from '@/components/home/footer/brand-logos';
 
 export function Footer() {
   return (
-    <footer className="bg-background">
-      <SinglePageCardGradient />
+    <footer className="bg-background bg-grain">
       {/* Main Footer Content */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

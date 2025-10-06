@@ -116,7 +116,7 @@ export default function EcoHouseProjectsPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           {/* CTA Eco Plan */}
           <section className="max-w-5xl mx-auto mb-16 lg:mb-24 px-8">

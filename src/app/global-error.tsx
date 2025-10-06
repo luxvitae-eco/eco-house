@@ -27,7 +27,7 @@ export default function GlobalError({ error, reset }: { error: Error; reset: () 
           </div>
         </div>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-24" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-24" />
       </body>
     </html>
   );

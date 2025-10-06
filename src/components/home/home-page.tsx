@@ -36,12 +36,12 @@ export function HomePage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: '/assets/eco-house-1/lux-vitae-eco-home-1.jpg', alt: 'Eco House Gallery - Modern Living Room' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-home-2.jpg', alt: 'Eco House Gallery - Sustainable Kitchen' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-home-3.jpg', alt: 'Eco House Gallery - Comfortable Bedroom' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-home-4.jpg', alt: 'Eco House Gallery - Eco-Friendly Bathroom' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-home-5.jpg', alt: 'Eco House Gallery - Beautiful Exterior View' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-home-6.jpg', alt: 'Eco House Gallery - Sustainable Garden' },
+    { src: '/assets/eco-house-projects/lux-vitae-eco-house-pine.jpg', alt: 'Eco House Project Pine' },
+    { src: '/assets/eco-house-projects/lux-vitae-eco-house-family.jpg', alt: 'Eco House Project Family' },
+    { src: '/assets/eco-house-projects/lux-vitae-coast.jpg', alt: 'Eco House Project - Coast' },
+    { src: '/assets/eco-house-projects/lux-vitae-eco-house-green-coast.jpg', alt: 'Eco House Project - Green Coast' },
+    { src: '/assets/eco-house-projects/lux-vitae-silver-living.jpg', alt: 'Eco House Project - Sea Living' },
+    { src: '/assets/eco-house-projects/lux-vitae-silver-terrace.jpg', alt: 'Eco House Project - Sea Terrace' },
   ];
 
   const projectTimelineData: TimelineItem[] = [
@@ -137,14 +137,6 @@ export function HomePage() {
             <p className="mx-auto mt-6 max-w-2xl text-justify text-lg leading-8 text-muted-foreground">
               We connect vetted construction firms, architects, engineers, interior designers, and real estate
               professionals, united by a commitment to healthy, efficient, and beautiful living spaces.
-              {/* Your curated ecosystem for the future of sustainable living.
-            We bring together vetted construction companies, visionary architects, expert engineers, inspired interior designers, 
-            and forward-thinking real estate professionals—united by a commitment to high-performance, healthy, and beautiful homes.
-
-            Your trusted network for building the future of sustainable living space.
-            At Lux Vitae Eco-House, we’ve created a curated ecosystem: a trusted network 
-            of vetted construction companies, visionary architects, expert engineers, inspired interior designers, 
-            and forward-thinking real estate professionals. */}
             </p>
             <div className="mt-16 flex justify-center">
               <Columns3 />
@@ -189,7 +181,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* Section 4: how, build eco-houses */}
         <section className="mx-auto my-16 px-6 lg:px-8">
@@ -249,7 +241,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* section 5: When, Project Timeline */}
         <section className="mx-auto my-16 px-6 lg:px-8">
@@ -303,7 +295,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* section 6: who, Network Partners */}
         <section className="text-center max-w-5xl mx-auto my-16 px-6 lg:px-8">
@@ -381,74 +373,45 @@ export function HomePage() {
               we reduce harm, support ecosystems, and inspire others to build differently.
             </p>
             <p className={'my-6 text-[18px] leading-6 md:text-base'}>This is how homes become part of the solution.</p>
-
-            <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" />
-
-            {/* CTA slogan */}
-            <h3 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-16">
-              Still exploring or ready to begin?
-            </h3>
-
-            {/* CTA Link-Buttons */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Homeowners CTA */}
-              <Button variant="default" size="default" asChild className="h-auto p-4 flex-col gap-3">
-                <Link href="/eco-home" className="text-center">
-                  <HousePlus className="h-8 w-8 mx-auto" />
-                  <span className="text-md font-light">Explore Our Eco-Home Models</span>
-                </Link>
-              </Button>
-
-              {/* Professionals CTA */}
-              <Button variant="default" size="default" asChild className="h-auto p-4 flex-col gap-3">
-                <Link href="/services" className="text-center">
-                  <Handshake className="h-8 w-8 mx-auto" />
-                  <span className="text-md font-light">Join Our Partner Network</span>
-                </Link>
-              </Button>
-
-              {/* Curious CTA */}
-              <Button variant="eco" size="default" asChild className="h-auto p-4 flex-col gap-3">
-                <Link href="/faq" className="text-center">
-                  <HelpCircle className="h-8 w-8 mx-auto" />
-                  <span className="text-md font-light">Your Questions, Answered.</span>
-                </Link>
-              </Button>
-            </div>
           </div>
         </section>
 
-        {/* <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-16" /> */}
+        {/* section 7: CTA, Navigation */}
+        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-20" />
 
-        {/* section 7: our motivation */}
-        {/*       <section className="text-center max-w-4xl mx-auto my-16 px-6 lg:px-8">
-        <h3 className="text-2xl font-bold tracking-tight text-foreground mb-4">
-          Every Lux Vitae eco-home is more than a shelter — it’s built to belong.
-        </h3>
-        <div className="flex flex-col md:flex-row items-start justify-center gap-4 mt-8">
-          <div className="flex items-start gap-4">
-            <LandPlot className="w-6 h-6 flex-shrink-0" />
-            <p className="text-lg leading-6">To the land it sits on.</p>
-          </div>
-          <div className="flex items-start gap-4">
-            <Users className="w-6 h-6 flex-shrink-0" />
-            <p className="text-lg leading-6">To the community it joins.</p>
-          </div>
-          <div className="flex items-start gap-4">
-            <Leaf className="w-6 h-6 flex-shrink-0" />
-            <p className="text-lg leading-6">To the future it helps create.</p>
-          </div>
-        </div>
-        <p className={'my-6 text-[18px] leading-7 md:text-base md:leading-6'}>
-          By integrating regenerative design, local materials, and high-performance systems,<br />
-          we reduce harm, support ecosystems, and inspire others to build differently.
-        </p>
-        <p className={'my-6 text-[18px] leading-7 md:text-[20px] md:leading-6'}>
-          This is how homes become part of the solution.
-        </p>
-      </section> */}
+        <section className="mx-auto max-w-5xl text-center my-20 px-6 lg:px-8">
+          {/* CTA slogan */}
+          <h3 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-16">
+            Still exploring or ready to begin?
+          </h3>
 
-        <Separator className="shrink-0 bg-border h-[1px] w-full footer-border mb-24" />
+          {/* CTA Link-Buttons */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Homeowners CTA */}
+            <Button variant="default" size="default" asChild className="h-auto p-4 flex-col gap-3">
+              <Link href="/eco-home" className="text-center">
+                <HousePlus className="h-8 w-8 mx-auto" />
+                <span className="text-md font-light">Explore Our Eco-Home Models</span>
+              </Link>
+            </Button>
+
+            {/* Professionals CTA */}
+            <Button variant="default" size="default" asChild className="h-auto p-4 flex-col gap-3">
+              <Link href="/services" className="text-center">
+                <Handshake className="h-8 w-8 mx-auto" />
+                <span className="text-md font-light">Join Our Partner Network</span>
+              </Link>
+            </Button>
+
+            {/* Curious CTA */}
+            <Button variant="eco" size="default" asChild className="h-auto p-4 flex-col gap-3">
+              <Link href="/faq" className="text-center">
+                <HelpCircle className="h-8 w-8 mx-auto" />
+                <span className="text-md font-light">Your Questions, Answered.</span>
+              </Link>
+            </Button>
+          </div>
+        </section>
       </div>
 
       {/* Full Screen Image Modal */}

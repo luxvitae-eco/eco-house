@@ -8,10 +8,6 @@
   background: url('/assets/background/grain-bg.svg') repeat;
 }
 
-.grid-bg {
-  background: url('/assets/background/grid-bg.svg') no-repeat;
-}
-
 .top-left-gradient-background {
   background: url('/assets/background/contact-top-gradient.svg') no-repeat top left;
 }
@@ -142,23 +138,4 @@
   margin-left: -197px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(168, 240, 248, 0.6) 100%);
   filter: blur(100px);
-}
-
-.footer-border {
-  position: relative;
-  background: linear-gradient(90deg, rgba(65, 75, 78, 0) 0%, #414b4e 49.5%, rgba(65, 75, 78, 0) 100%);
-}
-.footer-border::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 124px);
-  width: 248px;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 15%,
-    rgba(255, 248, 0, 0.6) 50%,
-    rgba(255, 255, 255, 0) 85%
-  );
 }

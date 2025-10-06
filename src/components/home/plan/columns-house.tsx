@@ -19,7 +19,7 @@ interface PlanTier {
 const planTiers: PlanTier[] = [
   {
     name: 'Sanctuary for Two',
-    thumb: '/assets/lux-vitae-eco-home-1.jpg',
+    thumb: '/assets/lux-vitae-eco-house-couple.jpg',
     period: 'Low-maintenance luxury for two, your next chapter.',
     description:
       'Designed for two — where comfort is curated, space is intentional, and every day feels effortlessly yours.',
@@ -37,7 +37,7 @@ const planTiers: PlanTier[] = [
   },
   {
     name: 'Family Courtyard',
-    thumb: '/assets/lux-vitae-eco-home-2.jpg',
+    thumb: '/assets/lux-vitae-eco-house-family.jpg',
     period: 'Designed for growing families with zoned quiet space.',
     description: 'Our most loved family home — where togetherness thrives and quiet moments find their place.',
     icon: 'home',
@@ -55,7 +55,7 @@ const planTiers: PlanTier[] = [
   },
   {
     name: 'Grand Villa',
-    thumb: '/assets/lux-vitae-eco-home-3.jpg',
+    thumb: '/assets/lux-vitae-eco-villa.jpg',
     period: 'Estate for creation, connection, and evolution.',
     description:
       'Our residence — where growing families, creative passions, and welcoming guests all find their perfect space.',

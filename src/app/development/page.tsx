@@ -100,7 +100,7 @@ export default function DevelopmentPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full footer-border my-8" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* Development Philosophy */}
           <section className="py-16">
@@ -316,7 +316,7 @@ export default function DevelopmentPage() {
           </section>
 
           {/* Call to Action */}
-          <section className="py-16">
+          <section className="mb-20">
             <div className="mx-auto max-w-2xl px-6 lg:px-8">
               <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
                 <SinglePageCardGradient />
