@@ -24,17 +24,14 @@ export const metadata: Metadata = {
 
 export default function EcoHouseVillaPage() {
   const galleryImages = [
-    { src: '/assets/eco-house-3/eco-villa-open.jpg', alt: 'Eco House Villa - Home Office' },
-    { src: '/assets/eco-house-3/eco-villa-luxury-pool.jpg', alt: 'Eco House Villa - Luxury Pool & Garden' },
-    { src: '/assets/eco-house-3/eco-villa-bedroom.jpg', alt: 'Eco House Villa - Bedroom' },
-    { src: '/assets/eco-house-3/eco-villa-gourmet-kitchen.jpg', alt: 'Eco House Villa - Gourmet Kitchen' },
-    { src: '/assets/eco-house-3/eco-villa-bathroom.jpg', alt: 'Eco House Villa - Bathroom' },
-    { src: '/assets/eco-house-3/eco-villa-shower.jpg', alt: 'Eco House Villa - Shower' },
-    { src: '/assets/eco-house-3/eco-villa-bedroom.jpg', alt: 'Eco House Villa - Bedroom' },
-    { src: '/assets/eco-house-3/eco-villa-bedroom-1.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/lux-vitae-eco-villa-hall.jpg', alt: 'Eco House Villa - Hall Luxury Pool & Garden' },
+    // { src: '/assets/eco-house-3/lux-vitae-eco-villa-living-room.jpg', alt: 'Eco House Villa - Living Room' },
+    { src: '/assets/eco-house-3/lux-vitae-eco-villa-open.jpg', alt: 'Eco House Villa - Open Living Space' },
+    // { src: '/assets/eco-house-3/eco-villa-gourmet-kitchen.jpg', alt: 'Eco House Villa - Gourmet Kitchen' },
     { src: '/assets/eco-house-3/eco-villa-bedroom-2.jpg', alt: 'Eco House Villa - Bedroom' },
-    { src: '/assets/eco-house-3/eco-villa-bedroom-3.jpg', alt: 'Eco House Villa - Bedroom' },
-    { src: '/assets/eco-house-3/eco-villa-bedroom-4.jpg', alt: 'Eco House Villa - Bedroom' },
+    { src: '/assets/eco-house-3/lux-villa-eco-villa-bathroom-full.jpg', alt: 'Eco House Villa - Bathroom Full' },
+    { src: '/assets/eco-house-3/lux-vitae-eco-villa-bath-shower.jpg', alt: 'Eco House Villa - Shower' },
+    { src: '/assets/eco-house-3/lux-vitae-eco-villa-home-office.jpg', alt: 'Eco House Villa - Home Office' },
   ];
 
   return (
@@ -57,7 +54,7 @@ export default function EcoHouseVillaPage() {
               <div className="mt-16 mx-auto max-w-4xl">
                 <div className="relative aspect-video rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-3/eco-house-1.jpg"
+                    src="/assets/eco-house-3/lux-vitae-eco-villa-view.jpg"
                     alt="Eco House Villa - Main View"
                     fill
                     className="object-cover"
@@ -122,7 +119,7 @@ export default function EcoHouseVillaPage() {
                 {/* Left Column - Image */}
                 <div className="relative aspect-square rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/lux-vitae-eco-home-3.jpg"
+                    src="/assets/eco-house-3/eco-villa-garden.jpg"
                     alt="Eco House Villa - Detailed View"
                     fill
                     className="object-cover"
