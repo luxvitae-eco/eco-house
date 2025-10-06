@@ -30,7 +30,6 @@ export default function EcoHouseFamilyPage() {
       alt: 'Eco House Family - Kitchen open',
     },
     { src: '/assets/eco-house-2/lux-vitae-eco-house-family-kitchen-open.jpg', alt: 'Eco House Family - Kitchen open' },
-    // { src: '/assets/eco-house-2/living-room-sheer.png', alt: 'Eco House Family - Living Room' },
     {
       src: '/assets/eco-house-2/lux-vitae-eco-house-family-bedroom-suite.jpg',
       alt: 'Eco House Family - Bedroom Suite',
@@ -39,18 +38,14 @@ export default function EcoHouseFamilyPage() {
       src: '/assets/eco-house-2/lux-vitae-eco-house-family-bedroom-child.jpg',
       alt: 'Eco House Family - Bedroom Child',
     },
-    // { src: '/assets/eco-house-2/bedroom-couple-sheer-white.jpg', alt: 'Eco House Family - Bedroom' },
     {
       src: '/assets/eco-house-2/lux-vitae-eco-house-family-bathroom-full.jpg',
       alt: 'Eco House Family - Bathroom full',
     },
-    // { src: '/assets/eco-house-2/bathroom-shower.jpg', alt: 'Eco House Family - Bathroom shower' },
     {
       src: '/assets/eco-house-2/lux-vitae-eco-house-family-garage-side.jpg',
       alt: 'Eco House Family - Side-Load Garage',
     },
-    // { src: '/assets/eco-house-2/lux-vitae-garage-2.jpg', alt: 'Eco House Family - Front-Load or Street-Facing Garage' },
-    // { src: '/assets/eco-house-2/lux-vitae-garage-2-nite.jpg', alt: 'Eco House Family - Basement-level Garage' },
   ];
 
   return (
@@ -222,7 +217,7 @@ export default function EcoHouseFamilyPage() {
                       <CarouselItem className="h-full p-0">
                         <div className="h-full w-full flex items-center justify-center">
                           <Image
-                            src="/assets/eco-house-2/eco-house-annex-3.jpg"
+                            src="/assets/eco-house-2/lux-vitae-custom-annex-1.jpg"
                             alt="Annex/Studio Option - View 3"
                             width={800}
                             height={450}
@@ -233,7 +228,7 @@ export default function EcoHouseFamilyPage() {
                       <CarouselItem className="h-full p-0">
                         <div className="h-full w-full flex items-center justify-center">
                           <Image
-                            src="/assets/eco-house-2/lux-vitae-eco-house-office.jpg"
+                            src="/assets/eco-house-2/lux-vitae-custom-house-office.jpg"
                             alt="Annex Studio Option - House Office"
                             width={800}
                             height={800}
@@ -255,7 +250,7 @@ export default function EcoHouseFamilyPage() {
                       <CarouselItem className="h-full p-0">
                         <div className="h-full w-full flex items-center justify-center">
                           <Image
-                            src="/assets/eco-house-2/lux-vitae-living-playroom.jpg"
+                            src="/assets/eco-house-2/lux-vitae-custom-living-playroom.jpg"
                             alt="Annex Studio Option - Living Playroom"
                             width={800}
                             height={800}
@@ -266,7 +261,7 @@ export default function EcoHouseFamilyPage() {
                       <CarouselItem className="h-full p-0">
                         <div className="h-full w-full flex items-center justify-center">
                           <Image
-                            src="/assets/eco-house-2/kitchen-smart-home.jpg"
+                            src="/assets/eco-house-2/lux-vitae-custom-kitchen-smart-home.jpg"
                             alt="Annex Studio Option - Kitchen Smart Home"
                             width={800}
                             height={800}
