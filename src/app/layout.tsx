@@ -10,7 +10,7 @@ import { Footer } from '@/components/home/footer/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://eco-house.vercel.app'),
+  metadataBase: new URL('https://live-ecohouse.vercel.app'),
   title: 'Eco House by Lux Vitae | Sustainable Living Made Beautiful',
   description:
     'Lux Vitae offers a new approach to residential design and construction with its sustainable Eco-Houses.',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://eco-house.vercel.app',
+    url: 'https://live-ecohouse.vercel.app',
     siteName: 'Eco House by Lux Vitae',
     title: 'Eco House by Lux Vitae | Sustainable Living Made Beautiful',
     description:
