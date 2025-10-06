@@ -69,7 +69,7 @@ export default function EcoHouseFamilyPage() {
               <div className="mt-16 mx-auto max-w-4xl">
                 <div className="relative aspect-video rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-2/lux-vitae-eco-house-family.jpg"
+                    src="/assets/eco-house-2/lux-vitae-eco-house-family-courtyard.jpg"
                     alt="Lux Vitae Eco House Family Courtyard"
                     fill
                     className="object-cover"
