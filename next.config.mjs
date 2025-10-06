@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['cdn.simpleicons.org', 'localhost', 'eco-house.vercel.app', 'res.cloudinary.com'],
+    domains: ['cdn.simpleicons.org', 'localhost', 'lve-ecohouse.vercel.app', 'res.cloudinary.com'],
     formats: ['image/webp', 'image/avif'],
   },
   experimental: {
