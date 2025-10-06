@@ -37,3 +37,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+src/components/gradients/login-gradient.tsx
+src/components/gradients/login-gradient.tsx
+src/components/gradients/login-card-gradient.tsx
+src/components/gradients/login-gradient.tsx

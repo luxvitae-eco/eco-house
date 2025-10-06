@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Dialog,
   DialogContent,
@@ -31,7 +31,6 @@ import { Toaster } from '@/components/ui/toaster';
 import { Timeline, TimelineItem } from '@/components/ui/timeline';
 import {
   Stepper,
-  StepperIndicator,
   StepperIndicatorImproved,
   StepperItem,
   StepperSeparator,
@@ -69,7 +68,6 @@ import { Share } from '@/components/shared';
 
 export default function TestPage() {
   const { toast } = useToast();
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
   const [stepperValue, setStepperValue] = useState(2);
 
   // Carousel data examples

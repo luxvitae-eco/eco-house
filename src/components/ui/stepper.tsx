@@ -106,17 +106,19 @@ StepperItem.displayName = 'StepperItem';
 export const StepperTrigger = forwardRef<HTMLButtonElement, StepperTriggerProps>(
   ({ asChild = false, children, className, onClick, ...props }, ref) => {
     if (asChild && React.isValidElement(children)) {
-      const childProps = children.props as any;
-      return React.cloneElement(children, {
-        ...childProps,
-        ref,
-        className: cn(className, childProps?.className),
+      const childProps = children.props as { className?: string; onClick?: (e: React.MouseEvent) => void };
+
+      // Create new props object without ref
+      const combinedProps = {
+        className: cn(className, childProps.className),
         onClick: (e: React.MouseEvent) => {
           onClick?.();
-          childProps?.onClick?.(e);
+          childProps.onClick?.(e);
         },
         ...props,
-      });
+      };
+
+      return React.cloneElement(children, combinedProps);
     }
 
     return (
@@ -140,10 +142,7 @@ StepperTrigger.displayName = 'StepperTrigger';
 export const StepperIndicator = forwardRef<HTMLDivElement, StepperIndicatorProps>(
   ({ className, children, ...props }, ref) => {
     const { currentStep } = useStepperContext();
-    const stepperItem = React.useContext(StepperContext);
-
-    // Get the step number from the parent StepperItem
-    const step = parseInt((ref as any)?.current?.closest('[data-step]')?.dataset?.step || '1');
+    const step = 1; // Default value
     const isActive = step === currentStep;
     const isCompleted = step < currentStep;
 
@@ -171,10 +170,7 @@ StepperIndicator.displayName = 'StepperIndicator';
 // StepperSeparator component
 export const StepperSeparator = forwardRef<HTMLDivElement, StepperSeparatorProps>(({ className, ...props }, ref) => {
   const { currentStep } = useStepperContext();
-  const stepperItem = React.useContext(StepperContext);
-
-  // Get the step number from the parent StepperItem
-  const step = parseInt((ref as any)?.current?.closest('[data-step]')?.dataset?.step || '1');
+  const step = 1; // Default value
   const isCompleted = step < currentStep;
 
   return (
