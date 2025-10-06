@@ -149,8 +149,8 @@ export default function EcoHouseCouplePage() {
                     </ul>
                     <p>
                       The annex features the same high-performance eco-standards as the main home, including
-                      energy-efficient glazing, sustainable materials, and seamless integration with your home's smart
-                      systems.
+                      energy-efficient glazing, sustainable materials, and seamless integration with your home&apos;s
+                      smart systems.
                     </p>
                   </div>
 

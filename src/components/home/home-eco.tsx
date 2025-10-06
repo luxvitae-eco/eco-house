@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { NavigationBar } from '@/components/home/header/navigation-bar';
 import { ColumnsHouse } from '@/components/home/plan/columns-house';
 import { Separator } from '@/components/ui/separator';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+// import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { HomePageBackground } from '@/components/gradients/home-page-background';
 import {
@@ -41,8 +41,8 @@ export function HomeEco() {
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-justify text-lg leading-8 text-muted-foreground">
               Our thoughtfully designed eco house models provide a blueprint for a life in harmony with nature. Each
-              model, from a cozy couple's retreat to a spacious family residence, is a canvas for your dreams, blending
-              sustainable architecture with unparalleled comfort.
+              model, from a cozy couple&#39;s retreat to a spacious family residence, is a canvas for your dreams,
+              blending sustainable architecture with unparalleled comfort.
             </p>
             <div className="mt-16 flex justify-center">
               <ColumnsHouse />
@@ -241,7 +241,7 @@ export function HomeEco() {
                 <Award className="h-6 w-6 mr-2" /> Green Labels & Certifications
               </h3>
               <p className="text-base leading-7 text-muted-foreground mb-4">
-                Certifications aren't mere badges; they're tangible proof of commitment.
+                Certifications aren&#39;t mere badges; they&#39;re tangible proof of commitment.
               </p>
               <p className="text-base leading-7 text-muted-foreground mb-4">
                 For homeowners, they mean healthier air, lower bills, and peace of mind. For professionals, they ensure
@@ -277,7 +277,7 @@ export function HomeEco() {
             </p>
             <p className="text-lg text-center max-w-3xl mx-auto mb-12">
               Understanding property types, sizes, styles, and locations helps you find the perfect sustainable house,
-              whether near the city or at nature’s edge.
+              whether near the city or at nature&#39;s edge.
             </p>
 
             {/* TABLE 1: PRIMARY CLASSIFICATION */}

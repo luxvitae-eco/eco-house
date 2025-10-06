@@ -10,7 +10,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Eco House by Lux Vitae',
   description:
-    "Learn about our privacy practices and commitment to protecting your data. We value your privacy and don't store any personal user data.",
+    'Learn about our privacy practices and commitment to protecting your data. We value your privacy and don&#39;t store any personal user data.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -59,7 +59,7 @@ export default function PrivacyPolicyPage() {
                   <SinglePageCardGradient />
 
                   <CardHeader>
-                    <CardTitle>What We Don't Collect</CardTitle>
+                    <CardTitle>What We Don&#39;t Collect</CardTitle>
                     <CardDescription>Personal information we explicitly avoid collecting</CardDescription>
                   </CardHeader>
 
@@ -115,6 +115,10 @@ export default function PrivacyPolicyPage() {
                     <li>• We do not share your information with third parties</li>
                     <li>• We do not use your information for marketing purposes</li>
                   </ul>
+                  <p className="text-sm text-muted-foreground">
+                    If you have any questions about our privacy practices, please don&#39;t hesitate to contact us
+                    directly.
+                  </p>
                   <p className="text-base leading-7 text-muted-foreground">
                     Any communication records are handled according to standard business practices and are not used for
                     data collection or profiling.
@@ -137,8 +141,8 @@ export default function PrivacyPolicyPage() {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">No Data Storage</h3>
                   <p className="text-sm text-muted-foreground">
-                    Since we don't collect personal data, there's nothing to store, access, or delete. Your privacy is
-                    protected by design.
+                    Since we don&#39;t collect personal data, there&#39;s nothing to store, access, or delete. Your
+                    privacy is protected by design.
                   </p>
                 </div>
 
@@ -159,7 +163,8 @@ export default function PrivacyPolicyPage() {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Questions Welcome</h3>
                   <p className="text-sm text-muted-foreground">
-                    If you have any questions about our privacy practices, please don't hesitate to contact us directly.
+                    If you have any questions about our privacy practices, please don&#39;t hesitate to contact us
+                    directly.
                   </p>
                 </div>
               </div>

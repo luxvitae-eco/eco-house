@@ -8,16 +8,16 @@ import { BlockStepper, type StepperStep } from '@/components/ui/block-stepper';
 import {
   DraftingCompass,
   House,
-  Sun,
-  Droplets,
+  // Sun,
+  // Droplets,
+  // Wind,
+  // Users,
   Zap,
-  Wind,
   Leaf,
   MapPin,
   PencilRuler,
   Lightbulb,
   FileCheck,
-  Users,
   Wrench,
 } from 'lucide-react';
 // import { FileText, Users, Target, TrendingUp, Clock, Award Leaf, Zap } from 'lucide-react';
@@ -308,7 +308,7 @@ export default function DesignPage() {
                   <CardContent className="space-y-4">
                     <p className="text-sm text-muted-foreground">
                       Native plant selection, rainwater harvesting, and food garden design that complements your
-                      eco-home's sustainability features.
+                      eco-home&apos;s sustainability features.
                     </p>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Native plant gardens</li>
@@ -359,7 +359,7 @@ export default function DesignPage() {
 
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Ready to Design Your Sustainable Home?</CardTitle>
-                  <CardDescription>Let's create a design that reflects your values and lifestyle</CardDescription>
+                  <CardDescription>Let&apos;s create a design that reflects your values and lifestyle</CardDescription>
                 </CardHeader>
 
                 <CardContent className="text-center">

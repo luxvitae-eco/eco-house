@@ -53,7 +53,7 @@ export default function AboutPage() {
                 Transforming the way people think about sustainable living
               </p>
               <p className="text-base text-justify leading-8 text-muted-foreground">
-                We believe sustainable living shouldn't mean compromising on beauty, comfort, or performance. Our
+                We believe sustainable living shouldn&apos;t mean compromising on beauty, comfort, or performance. Our
                 mission is to transform how homes are designed, built, and lived in, ensuring they heal rather than
                 harm. We envision a world where every home contributes to environmental regeneration, all while being
                 accessible, affordable, and awe-inspiring.

@@ -1,5 +1,14 @@
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Map, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import {
+  Mail,
+  MapPin,
+  Map,
+  // Phone,
+  // Facebook,
+  // Twitter,
+  // Instagram,
+  // Linkedin
+} from 'lucide-react';
 import { BrandLogos } from '@/components/home/footer/brand-logos';
 
 export function Footer() {

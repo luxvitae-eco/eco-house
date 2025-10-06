@@ -618,7 +618,7 @@ export default function TestPage() {
                                 <Star key={i} className="h-4 w-4 fill-primary text-primary" />
                               ))}
                             </div>
-                            <p className="text-sm text-center mb-4 italic">"{testimonial.content}"</p>
+                            <p className="text-sm text-center mb-4 italic">{testimonial.content}</p>
                             <div className="text-center">
                               <p className="font-semibold">{testimonial.name}</p>
                               <p className="text-xs text-muted-foreground">{testimonial.role}</p>

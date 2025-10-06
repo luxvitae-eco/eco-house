@@ -100,8 +100,8 @@ export default function ContactPage() {
             <section className="max-w-2xl text-center mx-auto mb-16">
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">Get in Touch</h1>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Have questions about our eco-house solutions? We'd love to hear from you. Send us a message and we'll
-                respond as soon as possible.
+                Have questions about our eco-house solutions? We&apos;d love to hear from you. Send us a message and
+                we&apos;ll respond as soon as possible.
               </p>
             </section>
 
@@ -112,7 +112,9 @@ export default function ContactPage() {
 
                 <CardHeader>
                   <CardTitle>Contact Form</CardTitle>
-                  <CardDescription>Fill out the form below and we'll get back to you within 24 hours.</CardDescription>
+                  <CardDescription>
+                    Fill out the form below and we&apos;ll get back to you within 24 hours.
+                  </CardDescription>
                 </CardHeader>
 
                 <CardContent>
@@ -202,7 +204,7 @@ export default function ContactPage() {
                 </p>
                 <p className="text-justify text-muted-foreground">
                   Once we receive your contact request, our team will review it and reach out to you directly using the
-                  contact details you've provided. We typically respond within 24 hours during business days.
+                  contact details you&apos;ve provided. We typically respond within 24 hours during business days.
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Your data is secure with us and will not be shared with third parties.

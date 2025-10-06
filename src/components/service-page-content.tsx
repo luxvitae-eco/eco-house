@@ -4,8 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { NavigationBar } from '@/components/home/header/navigation-bar';
 import { SinglePageGradient } from '@/components/gradients/single-page-gradient';
-import { SinglePageCardGradient } from '@/components/gradients/single-page-card-gradient';
-import { Separator } from '@/components/ui/separator';
+// import { SinglePageCardGradient } from '@/components/gradients/single-page-card-gradient';
+// import { Separator } from '@/components/ui/separator';
 
 interface GalleryImage {
   src: string;

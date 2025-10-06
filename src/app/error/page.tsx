@@ -4,18 +4,18 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 
 export const metadata: Metadata = {
-  title: 'Lux Vitae - Page Not Found',
+  title: 'Lux Vitae - Error',
 };
 
-export default function NotFound() {
+export default function ErrorPage() {
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="text-center">
-          <p className="text-6xl font-bold text-primary">404</p>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-5xl">Page not found</h1>
+          <p className="text-6xl font-bold text-primary">Oops!</p>
+          <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-5xl">Something went wrong</h1>
           <p className="mt-6 text-base leading-7 text-muted-foreground">
-            Sorry, we couldn&#39;t find the page you&#39;re looking for.
+            Sorry, we encountered an unexpected error. Please try again later.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild>

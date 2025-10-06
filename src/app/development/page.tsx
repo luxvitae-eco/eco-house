@@ -324,7 +324,7 @@ export default function DevelopmentPage() {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Ready to Build Your Sustainable Future?</CardTitle>
                   <CardDescription>
-                    Let's bring your eco-home vision to life with expert construction services
+                    Let&apos;s bring your eco-home vision to life with expert construction services
                   </CardDescription>
                 </CardHeader>
 

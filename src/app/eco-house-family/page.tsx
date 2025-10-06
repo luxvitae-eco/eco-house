@@ -141,7 +141,7 @@ export default function EcoHouseFamilyPage() {
                     <p>
                       The Family Courtyard is our most popular model, designed to foster a sense of community while
                       providing private retreats for every family member. With 140 to 160 square meters of thoughtfully
-                      designed space, it's perfect for growing families.
+                      designed space, it&apos;s perfect for growing families.
                     </p>
                     <p>
                       The expanded layout includes three comfortable bedrooms, a spacious family room, and enhanced
@@ -273,8 +273,8 @@ export default function EcoHouseFamilyPage() {
                     </ul>
                     <p>
                       The annex features the same high-performance eco-standards as the main home, including
-                      energy-efficient glazing, sustainable materials, and seamless integration with your home's smart
-                      systems.
+                      energy-efficient glazing, sustainable materials, and seamless integration with your home&apos;s
+                      smart systems.
                     </p>
                   </div>
 
