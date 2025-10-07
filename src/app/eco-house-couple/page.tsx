@@ -23,12 +23,12 @@ export const metadata: Metadata = {
 
 export default function EcoHouseCouplePage() {
   const galleryImages = [
-    { src: '/assets/eco-house-1/1024x900.jpg', alt: 'Eco House Couple - Exterior View 900' },
-    { src: '/assets/eco-house-1/1080x1080.jpg', alt: 'Eco House Couple - Living Room 1080' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-kitchen-open-1024x768.jpg', alt: 'Eco House Couple - Kitchen 768' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-bedroom-2-1024x768.jpg', alt: 'Eco House Couple - Bedroom' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-bathroom-1024x768.jpg', alt: 'Eco House Couple - Bathroom' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-office-1024x768.jpg', alt: 'Eco House Couple - Home office' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-seaside.jpg', alt: 'Eco House Couple - Seaside' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-terrace.jpg', alt: 'Eco House Couple - Terrace View' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-living-room.jpg', alt: 'Eco House Couple - Living Room' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-bedroom.jpg', alt: 'Eco House Couple - Bedroom' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-bathroom.jpg', alt: 'Eco House Couple - Bathroom' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-office.jpg', alt: 'Eco House Couple - Home office' },
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function EcoHouseCouplePage() {
               <div className="mt-16 mx-auto max-w-4xl">
                 <div className="relative aspect-video rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-1/lux-vitae-eco-house-1024x768.jpg"
+                    src="/assets/eco-house-1/lux-vitae-eco-house-sanctuary.jpg"
                     alt="Eco House Couple - Main View"
                     fill
                     className="object-cover"
@@ -104,69 +104,6 @@ export default function EcoHouseCouplePage() {
             </div>
           </section>
 
-          {/* Image Gallery Component (Client Component) */}
-          <ImageGallery galleryImages={galleryImages} />
-
-          {/* Customize Your Family Courtyard - Optional Upgrade */}
-          <section className="py-16 bg-muted/50">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold tracking-tight text-foreground mb-4">
-                  Customize Your Family Courtyard
-                </h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Enhance your eco-home with our optional annex/studio space - a versatile addition perfect for home
-                  offices, creative studios, or guest accommodations.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Left Column - Image */}
-                <div className="relative aspect-video rounded-xl overflow-hidden">
-                  <Image
-                    src="/assets/eco-house-2/studio-living-room-extension-eco.png"
-                    alt="Family Courtyard with Optional Annex/Studio"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-
-                {/* Right Column - Content */}
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold tracking-tight text-foreground">Annex/Studio Option</h3>
-                  <div className="space-y-4 text-md font-light text-muted-foreground">
-                    <p>
-                      Our optional annex/studio adds approximately 30-40 square meters of premium space to your Family
-                      Courtyard design. This versatile addition can be customized to serve as:
-                    </p>
-                    <ul className="space-y-2 ml-4">
-                      <li>• Home office or remote workspace</li>
-                      <li>• Artistic or creative studio</li>
-                      <li>• Guest accommodation with private entrance</li>
-                      <li>• Teen retreat or private study</li>
-                      <li>• Wellness or meditation space</li>
-                    </ul>
-                    <p>
-                      The annex features the same high-performance eco-standards as the main home, including
-                      energy-efficient glazing, sustainable materials, and seamless integration with your home&apos;s
-                      smart systems.
-                    </p>
-                  </div>
-
-                  <div className="pt-4">
-                    <Button variant="eco" size="lg" asChild>
-                      <Link href="/contact">Inquire About Pricing</Link>
-                    </Button>
-                    <p className="mt-3 text-sm text-muted-foreground">
-                      * Available as an upgrade option. Pricing varies based on specifications.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* Two Column Section */}
           <section className="py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -174,7 +111,7 @@ export default function EcoHouseCouplePage() {
                 {/* Left Column - Image */}
                 <div className="relative aspect-square rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-1/eco-house-luxvitae-1-1.jpg"
+                    src="/assets/eco-house-1/lux-vitae-eco-house-sanctuary-garden.jpg"
                     alt="Eco House Sanctuary for Two - Detailed View"
                     fill
                     className="object-cover"
@@ -221,6 +158,82 @@ export default function EcoHouseCouplePage() {
           </section>
 
           <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
+
+          {/* Image Gallery Component (Client Component) */}
+          <ImageGallery galleryImages={galleryImages} />
+
+          {/* Customize Your Eco-House - Optional Upgrade */}
+          <section className="my-16">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-4">
+                Customize Your Eco-Home
+              </h2>
+              <p className="text-lg text-muted-foreground text-justify max-w-3xl mx-auto">
+                Tailor layouts and finishes across your main living spaces, from the living room to the dining area, all
+                crafted with sustainable materials for timeless comfort. Elevate your eco-home with our optional annex,
+                a dedicated studio space. This addition is exceptionally versatile, functioning perfectly as a quiet
+                home office, an inspiring creative studio, or comfortable guest accommodations.
+              </p>
+              {/*               <div className="h-full w-full flex items-center justify-center mt-8">
+                <Image
+                  src="/assets/eco-house-2/lux-vitae-eco-house-family-annex-studio-custom.jpg"
+                  alt="Annex Studio Option"
+                  width={1280}
+                  height={480}
+                  className="object-cover w-full h-full rounded-lg"
+                />
+              </div> */}
+            </div>
+          </section>
+
+          {/* Customize Your Family Courtyard - Optional Upgrade */}
+          <section className="py-16 bg-muted/20">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Left Column - Image */}
+                <div className="relative aspect-video rounded-xl overflow-hidden">
+                  <Image
+                    src="/assets/eco-house-2/studio-living-room-extension-eco.png"
+                    alt="Family Courtyard with Optional Annex/Studio"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+
+                {/* Right Column - Content */}
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold tracking-tight text-foreground">Our Home Designs & Options</h3>
+                  <div className="space-y-4 text-md font-light text-muted-foreground">
+                    <p>
+                      Custom living spaces are the foundation of our design. Our optional annex, a dedicated studio
+                      space, adds approximately 30-40 square meters of premium, functional area. This versatile addition
+                      can be customized to serve as:
+                    </p>
+                    <ul className="space-y-2 ml-4">
+                      <li>• Home office or creative studio</li>
+                      <li>• Guest accommodation with private entrance</li>
+                      <li>• Wellness or meditation space</li>
+                    </ul>
+                    <p>
+                      The annex features the same high-performance eco-standards as the main home, including
+                      energy-efficient glazing, sustainable materials, and seamless integration with your home&apos;s
+                      smart systems.
+                    </p>
+                  </div>
+
+                  <div className="pt-4">
+                    <Button variant="eco" size="lg" asChild>
+                      <Link href="/contact">Inquire About Pricing</Link>
+                    </Button>
+                    <p className="mt-3 text-sm text-muted-foreground">
+                      * Available as an upgrade option. Pricing varies based on specifications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* CTA Eco Plan */}
           <section className="max-w-5xl mx-auto mb-16 lg:mb-24 px-8">
