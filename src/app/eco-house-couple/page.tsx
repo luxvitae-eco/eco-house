@@ -26,9 +26,9 @@ export default function EcoHouseCouplePage() {
     { src: '/assets/eco-house-1/lux-vitae-eco-house-seaside.jpg', alt: 'Eco House Couple - Seaside' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-terrace.jpg', alt: 'Eco House Couple - Terrace View' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-living-room.jpg', alt: 'Eco House Couple - Living Room' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-office.jpg', alt: 'Eco House Couple - Home office' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-bedroom.jpg', alt: 'Eco House Couple - Bedroom' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-bathroom.jpg', alt: 'Eco House Couple - Bathroom' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-office.jpg', alt: 'Eco House Couple - Home office' },
   ];
 
   return (
@@ -193,8 +193,8 @@ export default function EcoHouseCouplePage() {
                 {/* Left Column - Image */}
                 <div className="relative aspect-video rounded-xl overflow-hidden">
                   <Image
-                    src="/assets/eco-house-2/studio-living-room-extension-eco.png"
-                    alt="Family Courtyard with Optional Annex/Studio"
+                    src="/assets/eco-house-1/lux-vitae-eco-house-custom.jpg"
+                    alt="Eco-House with optional annex"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
