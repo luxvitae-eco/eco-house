@@ -121,7 +121,7 @@ export default function DesignPage() {
           </section> */}
 
           {/* Two Column Section */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left Column - Image */}
@@ -153,8 +153,6 @@ export default function DesignPage() {
               </div>
             </div>
           </section>
-
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* Design segment */}
           <section className="my-16">
@@ -349,7 +347,7 @@ export default function DesignPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-20" />
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           {/* Call to Action */}
           <section className="mb-20">

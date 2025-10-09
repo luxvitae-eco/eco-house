@@ -103,7 +103,7 @@ export default function DevelopmentPage() {
           <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
 
           {/* Development Philosophy */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Our Development Approach</h2>
@@ -156,7 +156,7 @@ export default function DevelopmentPage() {
           </section>
 
           {/* Development Services */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Construction Excellence</h2>
@@ -245,7 +245,7 @@ export default function DevelopmentPage() {
           </section>
 
           {/* Development Process */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Our Development Process</h2>
@@ -314,6 +314,8 @@ export default function DevelopmentPage() {
               <BlockStepper steps={consultingSteps} showNumbers={false} />
             </div>
           </section>
+
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
           {/* Call to Action */}
           <section className="mb-20">

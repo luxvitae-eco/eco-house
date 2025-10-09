@@ -311,6 +311,8 @@ export default function ConsultingPage() {
             </div>
           </section>
 
+          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
+
           {/* Call to Action */}
           <section className="mb-20">
             <div className="mx-auto max-w-2xl px-6 lg:px-8">
