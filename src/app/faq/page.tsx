@@ -7,7 +7,6 @@ import { Separator } from '@/components/ui/separator';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Lock } from 'lucide-react';
 import Link from 'next/link';
-import '@/styles/single-page.css';
 
 export default function FAQ() {
   const faqData = [

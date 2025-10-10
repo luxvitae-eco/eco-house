@@ -25,33 +25,59 @@ export function NavigationBar() {
               <NavigationMenuLink asChild>
                 <Link href="/" className={cn(navigationMenuTriggerStyle(), 'flex items-center')}>
                   <Home className="h-4 w-4" />
-                  <span className="ml-2 hidden sm:inline">Lux Vitae Eco</span>
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link href="/eco-home" className={cn(navigationMenuTriggerStyle(), 'flex items-center')}>
-                  <DraftingCompass className="h-4 w-4" />
-                  <span className="ml-2 hidden sm:inline">Houses</span>
+                  <span className="ml-2 hidden sm:block">Lux Vitae Eco</span>
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>
                 <Handshake className="mr-2 h-4 w-4" />
-                Services
+                <span className="ml-2 hidden sm:block">Eco-House</span>
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
                     <NavigationMenuLink asChild>
                       <Link
-                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/assets/lux-vitae-eco-house-family.jpg')] bg-cover bg-center no-underline outline-none focus:shadow-md"
+                        href="/eco-home"
+                      >
+                        <div className="w-full bg-black/70 text-white rounded-bl-md rounded-br-md p-4">
+                          <div className="mb-2 text-lg font-medium">Our Eco Houses</div>
+                          <p className="text-sm leading-tight">Explore our sustainable home models</p>
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                  <ListItem href="/eco-house-couple" title="The Sanctuary">
+                    Balance of Comfort & Efficiency for couples and small households.
+                  </ListItem>
+                  <ListItem href="/eco-house-family" title="The Family Courtyard">
+                    Community Living with Private Retreats.
+                  </ListItem>
+                  <ListItem href="/eco-house-villa" title="The Grand Villa">
+                    Spacious Luxury for Extended Living.
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>
+                <Handshake className="mr-2 h-4 w-4" />
+                <span className="ml-2 hidden sm:block">Services</span>
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <li className="row-span-3">
+                    <NavigationMenuLink asChild>
+                      <Link
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/assets/lux-vitae-technical-520.jpg')] bg-cover bg-center no-underline outline-none focus:shadow-md"
                         href="/services"
                       >
-                        <div className="mb-2 mt-4 text-lg font-medium">Eco House</div>
-                        <p className="text-sm leading-tight text-muted-foreground">Sustainable Living Made Beautiful</p>
+                        <div className="w-full bg-black/70 text-white rounded-bl-md rounded-br-md p-4">
+                          <div className="mb-2 text-lg font-medium">Our Services</div>
+                          <p className="text-sm leading-tight">Comprehensive Solutions for Your Project</p>
+                        </div>
                       </Link>
                     </NavigationMenuLink>
                   </li>

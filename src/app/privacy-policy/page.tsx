@@ -4,7 +4,7 @@ import { NavigationBar } from '@/components/home/header/navigation-bar';
 import { Separator } from '@/components/ui/separator';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import '@/styles/luxvitae.css';
-import '@/styles/single-page.css';
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

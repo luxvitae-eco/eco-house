@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import '@/styles/single-page.css';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 export const metadata: Metadata = {
   title: 'Consulting - Technical Consulting & Architecture Advice | Lux Vitae',
@@ -98,7 +98,7 @@ export default function ConsultingPage() {
 
           {/* Consulting Philosophy */}
           <section className="my-16">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Our Consulting Approach</h2>
                 <p className="mt-4 text-lg text-muted-foreground">
@@ -119,6 +119,13 @@ export default function ConsultingPage() {
                   </CardHeader>
 
                   <CardContent>
+                    <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                      <img
+                        src="/assets/lux-vitae-technical-520.jpg"
+                        alt="Certification Support"
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
                     <p className="text-base leading-7 text-muted-foreground">
                       Our technical assessments provide detailed analysis of project feasibility, regulatory
                       requirements, and optimal sustainable building strategies.
@@ -138,6 +145,13 @@ export default function ConsultingPage() {
                   </CardHeader>
 
                   <CardContent>
+                    <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                      <img
+                        src="/assets/lux-vitae-strategy-520.jpg"
+                        alt="Certification Support"
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
                     <p className="text-base leading-7 text-muted-foreground">
                       We develop comprehensive strategies that align your sustainability goals with practical
                       construction realities and budget considerations.
@@ -150,7 +164,7 @@ export default function ConsultingPage() {
 
           {/* Technical Consulting */}
           <section className="my-16">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Technical Consulting</h2>
                 <p className="mt-4 text-lg text-muted-foreground">
@@ -158,87 +172,151 @@ export default function ConsultingPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-                <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
-                  <SinglePageCardGradient />
-
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <FileText className="h-6 w-6 text-primary" />
-                      Feasibility Studies
-                    </CardTitle>
-                    <CardDescription>Comprehensive project viability assessment</CardDescription>
-                  </CardHeader>
-
-                  <CardContent className="space-y-4">
-                    <p className="text-sm text-muted-foreground">
-                      Detailed analysis of technical, environmental, and financial feasibility for your sustainable
-                      building project.
-                    </p>
-                    <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• Site analysis & assessment</li>
-                      <li>• Regulatory compliance review</li>
-                      <li>• Cost-benefit analysis</li>
-                      <li>• Risk assessment</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
-                  <SinglePageCardGradient />
-
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <TrendingUp className="h-6 w-6 text-primary" />
-                      Performance Optimization
-                    </CardTitle>
-                    <CardDescription>Maximizing efficiency and sustainability</CardDescription>
-                  </CardHeader>
-
-                  <CardContent className="space-y-4">
-                    <p className="text-sm text-muted-foreground">
-                      Optimization strategies to enhance energy efficiency, reduce costs, and maximize environmental
-                      benefits.
-                    </p>
-                    <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• Energy efficiency analysis</li>
-                      <li>• Material optimization</li>
-                      <li>• Cost reduction strategies</li>
-                      <li>• Performance monitoring</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
-                  <SinglePageCardGradient />
-
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Award className="h-6 w-6 text-primary" />
-                      Certification Support
-                    </CardTitle>
-                    <CardDescription>Green building certification guidance</CardDescription>
-                  </CardHeader>
-
-                  <CardContent className="space-y-4">
-                    <p className="text-sm text-muted-foreground">
-                      Expert support for achieving green building certifications and meeting sustainability standards.
-                    </p>
-                    <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• LEED certification</li>
-                      <li>• Energy Star compliance</li>
-                      <li>• Local green standards</li>
-                      <li>• Documentation support</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
+              <Tabs defaultValue="feasibility" className="w-full">
+                <TabsList className="grid w-full grid-cols-3">
+                  <TabsTrigger value="feasibility">
+                    Feasibility <span className="hidden md:pl-2 md:block">Studies</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="optimization">
+                    Performance <span className="hidden md:pl-2 md:block">Optimization</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="certification">
+                    Certification <span className="hidden md:pl-2 md:block">Support</span>
+                  </TabsTrigger>
+                </TabsList>
+                <TabsContent value="feasibility">
+                  <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm mt-6">
+                    <SinglePageCardGradient />
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <FileText className="h-6 w-6 text-primary" />
+                        Feasibility Studies
+                      </CardTitle>
+                      <CardDescription>Comprehensive project viability assessment</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div className="flex flex-col md:flex-row gap-6">
+                        <div className="md:w-1/2">
+                          <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                            <img
+                              src="/assets/lux-vitae-eco-home-consulting-520x520.jpg"
+                              alt="Feasibility Studies"
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+                        </div>
+                        <div className="md:w-1/2">
+                          <p className="text-sm text-muted-foreground mb-4">
+                            Detailed analysis of technical, environmental, and financial feasibility for your
+                            sustainable building project.
+                          </p>
+                          <ul className="text-sm text-muted-foreground space-y-1">
+                            <li>• Site analysis & assessment</li>
+                            <li>• Regulatory compliance review</li>
+                            <li>• Cost-benefit analysis</li>
+                            <li>• Risk assessment</li>
+                          </ul>
+                          <div className="mt-6">
+                            <Button asChild>
+                              <Link href="/contact">Get Technical Consulting</Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+                <TabsContent value="optimization">
+                  <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm mt-6">
+                    <SinglePageCardGradient />
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <TrendingUp className="h-6 w-6 text-primary" />
+                        Performance Optimization
+                      </CardTitle>
+                      <CardDescription>Maximizing efficiency and sustainability</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div className="flex flex-col md:flex-row gap-6">
+                        <div className="md:w-1/2">
+                          <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                            <img
+                              src="/assets/lux-vitae-eco-home-design-plan.jpg"
+                              alt="Performance Optimization"
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+                        </div>
+                        <div className="md:w-1/2">
+                          <p className="text-sm text-muted-foreground mb-4">
+                            Optimization strategies to enhance energy efficiency, reduce costs, and maximize
+                            environmental benefits.
+                          </p>
+                          <ul className="text-sm text-muted-foreground space-y-1">
+                            <li>• Energy efficiency analysis</li>
+                            <li>• Material optimization</li>
+                            <li>• Cost reduction strategies</li>
+                            <li>• Performance monitoring</li>
+                          </ul>
+                          <div className="mt-6">
+                            <Button asChild>
+                              <Link href="/contact">Get Performance Optimization Advice</Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+                <TabsContent value="certification">
+                  <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm mt-6">
+                    <SinglePageCardGradient />
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Award className="h-6 w-6 text-primary" />
+                        Certification Support
+                      </CardTitle>
+                      <CardDescription>Green building certification guidance</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div className="flex flex-col md:flex-row gap-6">
+                        <div className="md:w-1/2">
+                          <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                            <img
+                              src="/assets/lux-vitae-eco-house-couple.jpg"
+                              alt="Certification Support"
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+                        </div>
+                        <div className="md:w-1/2">
+                          <p className="text-sm text-muted-foreground mb-4">
+                            Expert support for achieving green building certifications and meeting sustainability
+                            standards.
+                          </p>
+                          <ul className="text-sm text-muted-foreground space-y-1">
+                            <li>• LEED certification</li>
+                            <li>• Energy Star compliance</li>
+                            <li>• Local green standards</li>
+                            <li>• Documentation support</li>
+                          </ul>
+                          <div className="mt-6">
+                            <Button asChild>
+                              <Link href="/contact">Get Certification Support</Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+              </Tabs>
             </div>
           </section>
 
           {/* Architectural Advice */}
           <section className="my-16">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground">Architectural Advice</h2>
                 <p className="mt-4 text-lg text-muted-foreground">

@@ -25,7 +25,6 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import '@/styles/single-page.css';
 
 export const metadata: Metadata = {
   title: 'Development - Sustainable Construction & Building | Lux Vitae',

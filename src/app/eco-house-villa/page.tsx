@@ -7,7 +7,6 @@ import { Separator } from '@/components/ui/separator';
 import { Bed, Bath, Ruler, Car, House, HousePlus, Trees } from 'lucide-react';
 import type { Metadata } from 'next';
 import { ImageGallery } from '@/components/eco-house-villa/image-gallery';
-import '@/styles/single-page.css';
 
 export const metadata: Metadata = {
   title: 'Eco House Villa - Sustainable Construction & Building | Lux Vitae',

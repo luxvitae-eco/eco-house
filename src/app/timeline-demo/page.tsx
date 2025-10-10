@@ -1,7 +1,6 @@
 import { NavigationBar } from '@/components/home/header/navigation-bar';
 import { SinglePageGradient } from '@/components/gradients/single-page-gradient';
 import { TimelineDemo } from '@/components/shared/timeline-demo';
-import '@/styles/single-page.css';
 
 export default function TimelineDemoPage() {
   return (

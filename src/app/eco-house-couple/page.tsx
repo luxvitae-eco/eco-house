@@ -7,7 +7,6 @@ import { Separator } from '@/components/ui/separator';
 import { Bed, Bath, Ruler, Car, House, HousePlus, Trees } from 'lucide-react';
 import type { Metadata } from 'next';
 import { ImageGallery } from '@/components/eco-house-couple/image-gallery';
-import '@/styles/single-page.css';
 
 export const metadata: Metadata = {
   title: 'Eco House Couple - Sustainable Construction & Building | Lux Vitae',
@@ -25,8 +24,8 @@ export default function EcoHouseCouplePage() {
   const galleryImages = [
     { src: '/assets/eco-house-1/lux-vitae-eco-house-seaside.jpg', alt: 'Eco House Couple - Seaside' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-terrace.jpg', alt: 'Eco House Couple - Terrace View' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-living-room.jpg', alt: 'Eco House Couple - Living Room' },
-    { src: '/assets/eco-house-1/lux-vitae-eco-house-office.jpg', alt: 'Eco House Couple - Home office' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-living-space.jpg', alt: 'Eco House Couple - Open Living Space' },
+    { src: '/assets/eco-house-1/lux-vitae-eco-house-office.jpg', alt: 'Eco House Couple - Home Office' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-bedroom.jpg', alt: 'Eco House Couple - Bedroom' },
     { src: '/assets/eco-house-1/lux-vitae-eco-house-bathroom.jpg', alt: 'Eco House Couple - Bathroom' },
   ];
@@ -194,7 +193,7 @@ export default function EcoHouseCouplePage() {
                 <div className="relative aspect-video rounded-xl overflow-hidden">
                   <Image
                     src="/assets/eco-house-1/lux-vitae-eco-house-custom.jpg"
-                    alt="Eco-House with optional annex"
+                    alt="Eco-House Optional Annex"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"

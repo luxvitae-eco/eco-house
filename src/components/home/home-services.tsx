@@ -72,7 +72,7 @@ export function HomeServices() {
         </section>
 
         {/* Section 2: Design Services - Image Left, Content Right */}
-        <section className="mx-auto max-w-5xl my-16">
+        <section className="mx-auto max-w-5xl my-16 px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="relative">
               <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
@@ -103,7 +103,7 @@ export function HomeServices() {
         </section>
 
         {/* section stepper: creative concept, sustainable architecture, interior design, inspiring spaces */}
-        <section className="mx-auto max-w-7xl my-16 px-6 lg:px-8">
+        <section className="mx-auto max-w-full bg-muted/20 my-16 py-16 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center mb-12">
             <h3 className="text-3xl font-bold tracking-tight text-foreground mb-4">Our Design Process</h3>
             <p className="text-base leading-7 text-muted-foreground">
@@ -184,7 +184,7 @@ export function HomeServices() {
         </section>
 
         {/* Section 3: Development Services */}
-        <section className="mx-auto max-w-5xl my-16">
+        <section className="mx-auto max-w-5xl my-16 px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="relative">
               <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
@@ -215,7 +215,7 @@ export function HomeServices() {
         </section>
 
         {/* section stepper: concept, construction management, project coordination, quality assurance, completion */}
-        <section className="mx-auto max-w-7xl my-16 px-6 lg:px-8">
+        <section className="mx-auto max-w-full bg-muted/20 my-16 py-16 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center mb-12">
             <h3 className="text-3xl font-bold tracking-tight text-foreground mb-4">Our Development Process</h3>
             <p className="text-base leading-7 text-muted-foreground">
@@ -223,8 +223,6 @@ export function HomeServices() {
               expertise, and unwavering commitment to quality.
             </p>
           </div>
-
-          {/* Stepper */}
           <div className="max-w-4xl mx-auto">
             <Stepper value={5} className="mb-8">
               <StepperItem step={1} className="not-last:flex-1">
@@ -313,7 +311,7 @@ export function HomeServices() {
         </section>
 
         {/* Section 4: Consulting Services - Image Left, Content Right */}
-        <section className="mx-auto max-w-5xl mb-20">
+        <section className="mx-auto max-w-5xl my-16 px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="relative">
               <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
@@ -343,7 +341,7 @@ export function HomeServices() {
         </section>
 
         {/* section stepper: sustainability, market trends, regulations, best pratices */}
-        <section className="mx-auto max-w-7xl my-16 px-6 lg:px-8">
+        <section className="mx-auto max-w-full bg-muted/20 my-16 py-16 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center mb-12">
             <h3 className="text-3xl font-bold tracking-tight text-foreground mb-4">Our Consulting Approach</h3>
             <p className="text-base leading-7 text-muted-foreground">
@@ -429,8 +427,6 @@ export function HomeServices() {
             </div>
           </div>
         </section>
-
-        <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
 
         {/* section 6: who, Network Partners */}
         <section className="text-center max-w-5xl mx-auto my-16 px-6 lg:px-8">

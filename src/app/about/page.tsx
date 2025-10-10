@@ -5,9 +5,9 @@ import { Separator } from '@/components/ui/separator';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Handshake, HandHelping, Home, Leaf, Lightbulb, Users, Droplets, TextSearch, Trees, Zap } from 'lucide-react';
 import type { Metadata } from 'next';
-import '@/styles/single-page.css';
 
 export const metadata: Metadata = {
   title: 'About Lux Vitae Eco - Design and build your eco house with vetted professionals',
@@ -34,10 +34,12 @@ export default function AboutPage() {
             <div className="mx-auto max-w-2xl text-center px-6 lg:px-8">
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">About Lux Vitae Eco</h1>
               <div className="mt-6 text-lg leading-8 text-muted-foreground">
-                <p>Redefining Sustainable Housing</p>
+                <p className="mt-6 text-center text-foreground text-[18px] leading-[27px] md:text-[20px] md:leading-[30px]">
+                  Redefining Sustainable Housing
+                </p>
                 <p>
                   A platform, a network, and a partner empowering professionals and homeowners to build truly
-                  sustainable homes — together.
+                  sustainable homes together.
                 </p>
               </div>
             </div>
@@ -61,8 +63,6 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-8" />
-
           <section className="max-w-7xl px-6 lg:px-8 mx-auto my-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-16">
               How We Make It Happen
@@ -78,6 +78,15 @@ export default function AboutPage() {
                   <CardDescription>Bespoke Eco-House Services</CardDescription>
                 </CardHeader>
                 <CardContent>
+                  <div className="relative aspect-video w-full overflow-hidden rounded-xl mx-auto mb-6">
+                    <Image
+                      src="/assets/lux-vitae-eco-home-design-plan.jpg"
+                      alt="Lux Vitae Eco Design"
+                      fill
+                      className="object-cover shadow-sm"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
+                    />
+                  </div>
                   <p className="text-base leading-7 text-muted-foreground">
                     From concept to certification — we design, develop, and consult on homes that are beautiful,
                     efficient, and deeply connected to place.
@@ -97,6 +106,15 @@ export default function AboutPage() {
                 </CardHeader>
 
                 <CardContent>
+                  <div className="relative aspect-video w-full overflow-hidden rounded-xl mx-auto mb-6">
+                    <Image
+                      src="/assets/lux-vitae-eco-home-consulting.jpg"
+                      alt="Lux Vitae Eco Building"
+                      fill
+                      className="object-cover shadow-sm"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
+                    />
+                  </div>
                   <p className="text-base leading-7 text-muted-foreground">
                     Access vetted collaborators and a curated library of materials, systems, and certifications — so you
                     can build smarter, faster, greener.
@@ -106,9 +124,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
-
-          <section className="max-w-4xl mx-auto my-16">
+          <section className="max-w-4xl px-6 lg:px-8 mx-auto my-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-8">
               What Makes Us Different
             </h2>
@@ -155,9 +171,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
-
-          <section className="max-w-4xl mx-auto my-16">
+          <section className="max-w-4xl px-6 lg:px-8 mx-auto my-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-8">
               Our platform combines
             </h2>
@@ -198,7 +212,7 @@ export default function AboutPage() {
                 <h3 className="text-lg font-semibold text-foreground mb-2">Tailored Services</h3>
                 <p className="text-sm text-justify text-muted-foreground">
                   Discover our comprehensive range of customizable services, thoughtfully designed to meet the unique
-                  needs and distinct visions of both homeowners and property developers.
+                  needs and distinct visions of both homeowners and developers.
                 </p>
               </div>
             </div>
@@ -208,7 +222,7 @@ export default function AboutPage() {
 
           {/* Call to Action */}
           <section className="mb-20">
-            <div className="mx-auto max-w-2xl">
+            <div className="mx-auto max-w-2xl px-6 lg:px-8">
               <Card className="relative overflow-hidden bg-background/80 backdrop-blur-sm">
                 <SinglePageCardGradient />
 

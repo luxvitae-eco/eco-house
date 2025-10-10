@@ -8,7 +8,6 @@ import { Bed, Bath, Ruler, Car, House, HousePlus, Trees } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import type { Metadata } from 'next';
 import { ImageGallery } from '@/components/eco-house-family/image-gallery';
-import '@/styles/single-page.css';
 
 export const metadata: Metadata = {
   title: 'Eco House Family - Sustainable Construction & Building | Lux Vitae',

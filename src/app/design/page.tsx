@@ -24,7 +24,6 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import '@/styles/single-page.css';
 
 export const metadata: Metadata = {
   title: 'Design Services | Eco House Solutions',

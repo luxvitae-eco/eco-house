@@ -70,65 +70,6 @@
   mask-composite: exclude;
 }
 
-.bg-grain {
-  background-color: black;
-  position: relative;
-  border-top: 1px solid transparent;
-}
-
-.bg-grain {
-  background: #101010;
-  /* border-radius: 15px; */
-  /* box-shadow: 0 8px 8px hsl(120deg 4% 10% / 50%); */
-  position: relative; /* Added for relative positioning of ::before and ::after */
-  /* Thin lime gradient top border effect integrated via background */
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 20%,
-    rgba(255, 248, 0, 0.4) 50%,
-    rgba(255, 255, 255, 0) 80%
-  );
-  background-size: 100% 1px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.bg-grain::after {
-  content: '';
-  position: absolute;
-  top: -25px; /* Positioned 25px above the box top for top-center peeking effect */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Offset by half its width for true centering */
-  height: 25%; /* Scaled to 25% for a larger circular spotlight effect */
-  width: 25%; /* Scaled to 25% for a larger circular spotlight effect */
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 20%,
-    rgba(255, 248, 0, 0.4) 50%,
-    rgba(255, 255, 255, 0) 80%
-  );
-
-  border-radius: 50%; /* Makes the pseudo-element circular */
-  z-index: -2; /* Behind the grain and box */
-  filter: blur(25px); /* Blur only the gradient for a soft glow, leaving grain crisp */
-}
-
-.bg-grain::before {
-  content: '';
-  position: absolute;
-  top: -25px; /* Match ::after positioning for top-center alignment */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Offset by half its width for true centering */
-  height: 50%; /* Scaled to 50% or double blur to cover the gradient larger circular spotlight effect */
-  width: 25%; /* Scaled to 25% for a larger circular spotlight effect */
-  background-image: 
-      /* Sharper, tinier white grain: Higher frequency for fine specks like film emulsion */ url("data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='4' stitchTiles='stitch'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='1'/%3E%3CfeFuncG type='linear' slope='1'/%3E%3CfeFuncB type='linear' slope='1'/%3E%3CfeFuncA type='linear' slope='0.4'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-size: 100% 100%;
-  mix-blend-mode: multiply; /* Blends white specks additively on top for bright, starry grain */
-  border-radius: 50%; /* Matches the circular shape */
-  z-index: -1; /* Above the blurred gradient but firmly behind the box */
-}
-
 .featured-plan-title {
   position: relative;
 }
