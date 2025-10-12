@@ -5,6 +5,7 @@ import { NavigationBar } from '@/components/home/header/navigation-bar';
 import { SinglePageGradient } from '@/components/gradients/single-page-gradient';
 import { Separator } from '@/components/ui/separator';
 import { Bed, Bath, Ruler, Car, House, HousePlus, Trees } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import type { Metadata } from 'next';
 import { ImageGallery } from '@/components/eco-house-villa/image-gallery';
 
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
 export default function EcoHouseVillaPage() {
   const galleryImages = [
     { src: '/assets/eco-house-3/lux-vitae-eco-villa-hall.jpg', alt: 'Eco House Villa - Hall Luxury Pool & Garden' },
-    { src: '/assets/eco-house-3/lux-vitae-eco-villa-open.jpg', alt: 'Eco House Villa - Open Living Space' },
+    { src: '/assets/eco-house-3/lux-vitae-eco-villa-dinning.jpg', alt: 'Eco House Villa - Dinning Space' },
     { src: '/assets/eco-house-3/lux-vitae-eco-villa-bedroom.jpg', alt: 'Eco House Villa - Bedroom' },
     { src: '/assets/eco-house-3/lux-villa-eco-villa-bathroom-full.jpg', alt: 'Eco House Villa - Bathroom Full' },
     { src: '/assets/eco-house-3/lux-vitae-eco-villa-bath-shower.jpg', alt: 'Eco House Villa - Shower' },
@@ -38,7 +39,7 @@ export default function EcoHouseVillaPage() {
         <SinglePageGradient />
         <div className="relative z-10">
           {/* Hero Section */}
-          <section className="pt-32 pb-16">
+          <section className="pt-32 pb-8">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-4xl text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">The Grand Villa</h1>
@@ -64,7 +65,7 @@ export default function EcoHouseVillaPage() {
           </section>
 
           {/* Property Features - 4 columns */}
-          <section className="pb-16">
+          <section className="my-8">
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-8 rounded-lg border bg-card text-card-foreground shadow-xs">
                 {/* Bedrooms Column */}
@@ -106,11 +107,8 @@ export default function EcoHouseVillaPage() {
             </div>
           </section>
 
-          {/* Image Gallery Component (Client Component) */}
-          <ImageGallery galleryImages={galleryImages} />
-
           {/* Two Column Section */}
-          <section className="py-16">
+          <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left Column - Image */}
@@ -163,10 +161,122 @@ export default function EcoHouseVillaPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
+          {/* Image Gallery Component (Client Component) */}
+          <ImageGallery galleryImages={galleryImages} />
+
+          {/* Customize Your Grand Villa - Header */}
+          <section className="my-16">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-4">
+                Customize Your Eco Villa
+              </h2>
+              <p className="text-lg text-muted-foreground text-justify max-w-3xl mx-auto">
+                Tailor layouts and finishes across your main living spaces, from the living room to the dining area, all
+                crafted with sustainable materials for timeless comfort. Elevate your eco-home with our optional annex,
+                a dedicated studio space. This addition is exceptionally versatile, functioning perfectly as a quiet
+                home office, an inspiring creative studio, or comfortable guest accommodations.
+              </p>
+              <div className="h-full w-full flex items-center justify-center mt-8">
+                <Image
+                  src="/assets/eco-house-3/lux-vitae-eco-villa-annex-custom.jpg"
+                  alt="Annex Studio Option"
+                  width={1280}
+                  height={480}
+                  className="object-cover w-full h-full rounded-lg"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Customize Your Grand Villa - Optional Upgrade */}
+          <section className="bg-muted/20">
+            <div className="mx-auto max-w-7xl py-16 px-6 lg:px-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Left Column - Carousel */}
+                <div className="relative aspect-video rounded-xl overflow-hidden">
+                  <Carousel className="w-full h-full">
+                    <CarouselContent className="h-full">
+                      <CarouselItem className="h-full p-0">
+                        <div className="h-full w-full flex items-center justify-center">
+                          <Image
+                            src="/assets/eco-house-3/lux-vitae-eco-villa-annex-creative.jpg"
+                            alt="Annex Studio View"
+                            width={1080}
+                            height={564}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="h-full p-0">
+                        <div className="h-full w-full flex items-center justify-center">
+                          <Image
+                            src="/assets/eco-house-3/lux-vite-eco-villa-annex-studio.jpg"
+                            alt="Annex Studio Option - Studio"
+                            width={1080}
+                            height={564}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="h-full p-0">
+                        <div className="h-full w-full flex items-center justify-center">
+                          <Image
+                            src="/assets/eco-house-3/lux-vitae-eco-villa-annex-architect.jpg"
+                            alt="Annex Studio Option -  House Office"
+                            width={1080}
+                            height={564}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="h-full p-0">
+                        <div className="h-full w-full flex items-center justify-center">
+                          <Image
+                            src="/assets/eco-house-3/lux-vitae-eco-villa-annex-workshop.jpg"
+                            alt="Annex Studio Option - Workshop"
+                            width={1080}
+                            height={564}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious className="left-4" />
+                    <CarouselNext className="right-4" />
+                  </Carousel>
+                </div>
+
+                {/* Right Column - Content */}
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold tracking-tight text-foreground">Our Home Designs & Options</h3>
+                  <div className="space-y-4 text-md font-light text-muted-foreground">
+                    <p>
+                      Custom living spaces are the foundation of our design. Our optional annex, a dedicated studio
+                      space, adds approximately 40-60 square meters of premium, functional customized area: home office,
+                      creative studio, or guest accommodation.
+                    </p>
+                    <p>
+                      The annex features the same high-performance eco-standards as the main home, including
+                      energy-efficient glazing, sustainable materials, and seamless integration with your home&apos;s
+                      smart systems.
+                    </p>
+                  </div>
+
+                  <div className="pt-4">
+                    <Button variant="eco" size="lg" asChild>
+                      <Link href="/contact">Inquire About Pricing</Link>
+                    </Button>
+                    <p className="mt-3 text-sm text-muted-foreground">
+                      * Available as an upgrade option. Pricing varies based on specifications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* CTA Eco Plan */}
-          <section className="max-w-5xl mx-auto mb-16 lg:mb-24 px-8">
+          <section className="max-w-5xl mx-auto my-16 px-6 lg:px-8">
             <h3 className="mt-2 text-4xl font-bold text-center tracking-tight text-foreground sm:text-5xl mb-16">
               Explore our sustainable home models
             </h3>

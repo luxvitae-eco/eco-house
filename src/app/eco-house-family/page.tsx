@@ -54,7 +54,7 @@ export default function EcoHouseFamilyPage() {
         <SinglePageGradient />
         <div className="relative z-10">
           {/* Hero Section */}
-          <section className="pt-32 pb-16">
+          <section className="pt-32 pb-8">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-4xl text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">The Family Courtyard</h1>
@@ -81,7 +81,7 @@ export default function EcoHouseFamilyPage() {
           </section>
 
           {/* Property Features - 4 columns */}
-          <section className="mb-16">
+          <section className="my-8">
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-8 rounded-lg border bg-card text-card-foreground shadow-xs">
                 {/* Bedrooms Column */}
@@ -177,12 +177,10 @@ export default function EcoHouseFamilyPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
-
           {/* Image Gallery Component (Client Component) */}
           <ImageGallery galleryImages={galleryImages} />
 
-          {/* Customize Your Family Courtyard - Optional Upgrade */}
+          {/* Customize Your Family Courtyard - Header */}
           <section className="my-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <h2 className="text-3xl font-bold tracking-tight text-foreground text-center mb-4">
@@ -206,8 +204,9 @@ export default function EcoHouseFamilyPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-muted/20">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          {/* Customize Your Family Courtyard - Optional Upgrade */}
+          <section className="bg-muted/20">
+            <div className="mx-auto max-w-7xl py-16 px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left Column - Carousel */}
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
@@ -308,10 +307,8 @@ export default function EcoHouseFamilyPage() {
             </div>
           </section>
 
-          <Separator className="shrink-0 bg-border h-[1px] w-full border-light my-16" />
-
           {/* CTA Eco Plan */}
-          <section className="max-w-5xl mx-auto mb-16 lg:mb-24 px-8">
+          <section className="max-w-5xl mx-auto my-16 px-6 lg:px-8">
             <h3 className="mt-2 text-4xl font-bold text-center tracking-tight text-foreground sm:text-5xl mb-16">
               Explore our sustainable home models
             </h3>
